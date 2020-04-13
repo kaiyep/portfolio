@@ -211,7 +211,7 @@ li {
 
 .vertical-center {
   margin: 0;
-  position: absolute;
+  position: inherit;
   top: 50%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
