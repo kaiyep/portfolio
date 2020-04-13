@@ -203,6 +203,7 @@ li {
 .home {
     height: 95vh;
     position: relative;
+    overflow: hidden;
 }
 
 #about {
@@ -211,8 +212,7 @@ li {
 
 .vertical-center {
   margin: 0;
-  position: inherit;
-  width:95%;
+  position: absolute;
   top: 50%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
