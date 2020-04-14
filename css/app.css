@@ -1,5 +1,7 @@
 html {
   scroll-behavior: smooth;
+  overflow-y: scroll; /* has to be scroll, not auto */
+  -webkit-overflow-scrolling: touch;
 }
 
 body {
@@ -116,6 +118,14 @@ a:hover {
   color: #2A384D;
 }
 
+.a-inactive {
+  color: #2A384D;
+ }
+
+.a-inactive:hover {
+  color: #0062FF;
+}
+
 ul {
   margin-left: 0rem;
   margin-bottom: 2rem;
@@ -163,6 +173,7 @@ li {
 .dropdown-content {
   display: none;
   position: absolute;
+  overflow: hidden;
   top:0px;
   background-color: #fff;
   border-radius: 4px;
@@ -201,9 +212,8 @@ li {
 
 
 .home {
-    height: 95vh;
+    height: 90vh;
     position: relative;
-    overflow: hidden;
 }
 
 #about {
@@ -212,7 +222,7 @@ li {
 
 .vertical-center {
   margin: 0;
-  position: absolute;
+  position: inherit;
   top: 50%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -221,6 +231,22 @@ li {
 .project-tile {
    overflow:auto;
 }
+
+.tooltip {
+  background-color: #111D29;
+  color: #fff;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  padding: 2rem;
+  position: absolute;
+  z-index: 10;
+  top: calc(100% + 0.5rem);
+  max-width: 30rem !important;
+  border-radius: 4px;
+  box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.16), 0px 0px 2px rgba(0, 0, 0, 0.16);}
+
+  .tooltip::before {
+    border-color: transparent transparent #111D29;}
 
 .bottom-links {
   padding: 0rem 0rem 4rem 0rem;
@@ -239,37 +265,31 @@ li {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16), 0px 0px 2px rgba(0, 0, 0, 0.16);
 }
 
-/*
 #main {
-  margin-bottom: 6rem;
-  background-color: #fff;
-  box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.16), 0px 0px 2px rgba(0, 0, 0, 0.16);
-  z-index: 2;
   width: 100%;
 }
 
 #footer {
-  visibility: none;
-  height:6rem;
   width:100%;
-  position:fixed;
-  background: #223548;
-  padding-top: 2rem;
-  text-align: center;
+  background: #fff;
   bottom:0;
-  z-index: -1;
 }
 
 #footer p {
-  color:#A9B4BE;
+  padding: 2rem 0;
+  margin: 0;
 }
-*/
+
+
+
+
+
 
 /* Spacing */
 
 
 .spacing-s {
-  padding-bottom: 1rem;
+  padding-bottom: 0.5rem;
 }
 
 .spacing-m {
@@ -277,13 +297,30 @@ li {
 }
 
 .spacing-l {
-  padding-bottom: 5rem;
+  padding-bottom: 4rem;
 }
 
 .spacing-xl {
-  padding-bottom: 10rem;
+  padding-bottom: 6rem;
 }
 
+@media screen and (min-width: 40em) {
+
+.spacing-s {
+  padding-bottom: 1rem;
+}
+
+.spacing-m {
+  padding-bottom: 4rem;
+}
+
+.spacing-l {
+  padding-bottom: 6rem;
+}
+.spacing-xl {
+  padding-bottom: 10rem;
+}
+}
 
 .image {
   margin: 2rem 0 3rem 0;
@@ -291,8 +328,15 @@ li {
 
 .hero-image{
   width:100%;
-  margin: 10rem 0 6rem 0;
+  height: 30rem;
   border-radius: 0px;
+
+}
+
+@media screen and (min-width: 40em) {
+.hero-image {
+  height: 50rem;
+}
 }
 
 .nav-desktop {
@@ -392,13 +436,16 @@ li {
           transform: translateY(-50%);
   z-index: 10;
   padding: 1rem;
-  color: #2A384D;
-  background-color: #fff;
+  font-size: 2rem;
+  color: #fff;
+  background-color: transparent;
+  text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16), 0px 4px 2px rgba(0, 0, 0, 0.16);}
   }
+
   [data-whatinput='mouse'] .orbit-previous, [data-whatinput='mouse'] .orbit-next {
     outline: 0; }
   .orbit-previous:hover, .orbit-next:hover, .orbit-previous:active, .orbit-next:active, .orbit-previous:focus, .orbit-next:focus {
-    background: #B4BECC;
+    background: rgba(42, 56, 77, 0.3);;
   }
 
 .orbit-previous {
