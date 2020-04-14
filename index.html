@@ -38,7 +38,7 @@
   <div id="logo-sticky" class="dropdown">
     <button class="dropbtn" href="index.html"><img src="images/favicon32px.svg" alt="Logo"></button>
   <div class="dropdown-content">
-    <div class="currentpage" style="border-radius: 4px 0px 0px 0px;"><a class="a-active" href="index.html">Home</a></div>
+    <div class="currentpage"><a class="a-active" href="index.html">Home</a></div>
     <a href="about.html">About</a>
     <a href="resume.html">Resume</a>
   </div>
@@ -53,9 +53,8 @@
 <header id="header" class="row">
   <div class="home medium-10 medium-push-1 columns">
     <div class="vertical-center columns">
-      <h1 class="h1" style="margin-bottom:1rem"><a class="a-active" href="about.html">Javier Yep</a> — product designer, inventor and illustrator.</h1>
-      <p class="body-large hide-for-small-only" style="margin-bottom:0.3rem">Currently at <a href="https://www.docusign.com/" target="_blank">DocuSign</a> in Chicago. Previously at <a href="https://www.sap.io/" target="_blank">SAP.iO</a> in San Francisco.</p>
-      <a class="body-large" href="#projects">View projects ↓</a>
+      <h1 class="h1 spacing-s"><span class="a-active" data-tooltip tabindex="1" data-position="bottom" data-alignment="left" title="Pronounced /khav-yair yep/. Yep, that's my name! ;)">Javier Yep</span> — <span class="a-inactive" data-tooltip tabindex="1" title="I'm currently working at DocuSign in Chicago. Previously, I was at SAP in San Francisco.">product designer</span>, <span class="a-inactive" data-tooltip tabindex="1" title="I recently got a US Patent that I painfully filed without a lawyer. More on that later...">inventor</span> and <span class="a-inactive" data-tooltip tabindex="1" title="Like most people, I started drawing as a kid, but the thing is that I never stopped!">illustrator</span>.</h1>
+      <p  class="body-large">↑ <span class="hide-for-small-only">Hover</span><span class="show-for-small-only">Tap</span> to learn more / <a href="#projects">View projects ↓</a></p>
     </div>
   </div>
 </header>
@@ -65,7 +64,7 @@
 
 <div id="projects" class="columns">
   
-  <section id="gen" class="row spacing-xl project-tile">
+  <section id="gen" class="row spacing-xl project-tile index-item">
     <div class="medium-4 columns">
       <div class="p-description">
         <h2 class="h2">DocuSign Gen</h2>
@@ -174,15 +173,22 @@
 </main>
 
 <!--Footer-->
-<!--
-<footer id="footer">
-  <p>Self-coded with love and a lot of coffee<span class="hide-for-small-only"> — </span><br class="show-for-small-only">Javier Yep &copy; 2020</p>
+
+<footer id="footer" class="row">
+  <div class="medium-10 medium-push-1 columns">
+    <div class="row columns">
+      <div class="medium-6 columns">
+        <p>&copy; Javier Yep 2020<span class="show-for-small-only"><br>Self-coded with love and a lot of coffe<br><a href="https://www.linkedin.com/in/javier-yep/" target="_blank">LinkedIn</a> · <a href="https://www.instagram.com/javier_yep/" target="_blank">Instagram</a> · <a href="https://dribbble.com/javieryep" target="_blank">Dribbble</a> · <a href="https://medium.com/@javieryep" target="_blank">Medium</a></span></p>
+      </div>
+      <div class="medium-6 columns hide-for-small-only text-right">
+        <p>Self-coded with love and a lot of coffee</p>
+      </div>
+    </div>
 </footer>
--->
 
     <script src="js/app.js"></script>
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+    <script src="js/vendor/foundation.js"></script>
     <script>
       $(document).foundation();
     </script>
