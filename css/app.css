@@ -132,7 +132,7 @@ ul {
 }
   
 li {
-  margin-bottom:.3rem;
+  margin-bottom: 0.8rem;
 }
 
 
@@ -340,7 +340,7 @@ li {
 }
 
 .nav-desktop {
-  padding-top:1rem;
+  padding:1rem 6rem 0 0;
 }
 
 .index-item{

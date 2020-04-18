@@ -62,11 +62,16 @@
     <div class="row">
       <div class="medium-6 columns">
         <p class="body-large">Roles</p>
-        <p>User research, prototyping, UI design, web design<br>Built a maintained a design system<br>Art direction and brand design</p>
+        <ul class="no-bullet">
+          <li>Product design, brand design, marketing</li>
+          <li>Built a maintained an evolving design system</li>
+        </ul>
       </div>
       <div class="medium-6 columns">
         <p class="body-large">Results</p>
-        <p>Increased the Weekly Active Returning Users (WARU) by 4 times in 3 months<br>Met stats successfully to receive Series A funding</p>
+        <ul class="no-bullet">
+          <li>Increased the Weekly Active Returning Users (WARU) by 4 times in 3 months</li>
+        </ul>
       </div>
     </div>
   </div>
@@ -88,10 +93,11 @@
       <ul id="menuleft" class="nav-desktop no-bullet">
         <li><a href="#1">The challenge</a></li>
         <li><a href="#2">Two personas</a></li>
-        <li><a href="#3">The MVP</a></li>
-        <li><a href="#4">Redesign</a></li>
+        <li><a href="#3">The product MVP</a></li>
+        <li><a href="#4">Taking it to the next level</a></li>
         <li><a href="#5">Results</a></li>
         <li><a href="#6">Happy branding</a></li>
+        <li><a href="#7">Some key learnings</a></li>
       </ul>
     </div>
   </div>
@@ -104,15 +110,18 @@
     
     <div id="1" class="row spacing-l index-item">
       <div class="medium-12 columns">
-          <h2 class="h3">The challenge</h2>
+          <h2 class="h2 spacing-s">The challenge</h2>
           <p>The workplace has become increasingly collaborative and meetings have become the main context in which our relationships develop. The problem is that many of us usually have days full of back-to-back meetings, in which proper preparation for meetings feels impossible. Others just don’t prepare due to other seemingly more important tasks.</p>
-          <p>Dabra aims to facilitate better workplace relationships by focusing on recurrent one-on-one (1:1) meetings, providing the tools to grow in effectiveness and empathy. How does it work? It provides a collaborative and private area for setting the meeting agenda and suggesting previously discussed topics when preparing for an upcoming meeting. With behavioral insights, Dabra also provides valuable information about colleagues which gives context for personalized conversations.</p>
+          <p class="spacing-s">Dabra aims to facilitate better workplace relationships by focusing on recurrent one-on-one (1:1) meetings, providing the tools to grow in effectiveness and empathy. How does it work? It provides a collaborative and private area for setting the meeting agenda and suggesting previously discussed topics when preparing for an upcoming meeting. With behavioral insights, Dabra also provides valuable information about colleagues which gives context for personalized conversations.</p>
+          <div class="image" style="padding-bottom:56.25%; position:relative; display:block; width: 100%">
+           <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/QrM9qv7MTWM?rel=0&modestbranding=1&showinfo=0&autohide=1&color=white" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:absolute; top:0; left: 0; border-radius: 4px;"></iframe>
+          </div>
       </div>
     </div>
 
     <div id="2" class="row spacing-l index-item">
       <div class="medium-12 columns">
-          <h2 class="h3">Two personas</h2>
+          <h2 class="h2 spacing-s">Two personas</h2>
           <p>Dabra addresses two personas: managers and team members. Even though both benefit from better 1:1 meetings, they have different motivations. We decided to focus primarily on managers, as they would drive adoption by inviting their team members to Dabra.</p>
           <div class="image row">
               <div class="medium-6 columns">
@@ -127,7 +136,7 @@
 
     <div id="3" class="row spacing-l index-item">
       <div class="medium-12 columns">
-        <h2 class="h3">The MVP</h2>
+        <h2 class="h2 spacing-s">The product MVP</h2>
           <p>The first product iteration was a Slack chatbot that reminded managers to prepare for their 1:1 meetings and keep track of their notes on a Slack conversation. However, managers didn’t interact with the chatbot regularly, one of the team’s key initial assumptions. The product pivoted into an email assistant instead, but was not efficient enough for managers to keep track of all meetings notes, scattered throughout countless emails. Dabra pivoted once again into a note-taking web application. This time, the user feedback was tremendously possitive. Users found it much more useful because they had a single platform to manage all their content.</p>
 
           <img class="image" src="images/dabra/evolution.png">
@@ -148,13 +157,13 @@
 
     <div id="4" class="row spacing-l index-item">
       <div class="medium-12 columns">
-        <h2 class="h3">Taking it to the next level</h2>
+        <h2 class="h2 spacing-s">Taking it to the next level</h2>
           <p>In order to create more information density, I decided to change the card-like structure of the UI by removing the meeting and topic containers. The intention was to give the app an ‘open-text’ feel but still using independent input field components. The gradient background was applied to the left panel to give the product more personality. Typeface became an important element in the UI. Without strong dividers or containers, the big bold titles became the natural transition between one meeting and the next.</p>
 
           <div class="row image">
             <div class="medium-12 columns">
               <div data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
-                <ul class="orbit-container" style="border-radius:4px;">
+                <ul class="orbit-container drop-shadow image">
                   <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#10094;</button>
                   <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#10095;</button>
                   <li class="is-active orbit-slide">
@@ -189,7 +198,7 @@
 
     <div id="5" class="row spacing-l index-item">
       <div class="medium-12 columns">
-        <h2 class="h3">Results</h2>
+        <h2 class="h2 spacing-s">Results</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
           <div class="row">
@@ -205,10 +214,59 @@
 
     <div id="6" class="row spacing-l index-item">
       <div class="medium-12 columns">
-        <h2 class="h3">Happy branding</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <h2 class="h2 spacing-s">Happy branding</h2>
+          <p>In its former interations, Dabra was personified by a friendly robot that became Dabra’s isotype as well. The team referred to the product as a ‘personal assistant’. But this concept didn’t fit the latest iteration of the product, so the brand needed to evolve, as well as the brand language and communication.</p>
+          <p>The first concept I proposed was two overlapping speech bubbles forming an uppercase D, where Dabra stays in the center of the conversation but in a secondary place. After serious consideration, this option was discarded because speech bubbles are already used in many applications. The second proposal used a colon and uppercase d (:D), taken from the way users usually express the subject of one-on-one meetings. If Dabra is included on the meeting subject, the happy face appears:</p>
+          <p>This last concept seemed much more promising and in line with what we have thought of the product since the beginning. Dabra’s CEO, Vitaly Vainer, was particularly excited about this option. It showed much more potential as it is less generic, but still very fun and relatable. It dramatically breaks with the visual trend in enterprise software in its lack of emotion.</p>
+          <div class="row image">
+              <div class="medium-12 columns">
+              <img src="images/dabra/dabra-logo-large.png">
+            </div>
+          </div>
+          <div class="row image">
+              <div class="small-6 columns">
+              <img  class="drop-shadow" src="images/dabra/dabra-logo-green.png">
+            </div>
+            <div class="small-6 columns">
+              <img  class="drop-shadow" src="images/dabra/dabra-logo-dark.png">
+            </div>
+          </div>
+          <div class="row image">
+              <div class="small-6 columns">
+              <img  class="drop-shadow" src="images/dabra/dabra-face.png">
+            </div>
+            <div class="small-6 columns">
+              <img  class="drop-shadow" src="images/dabra/branding1.png">
+            </div>
+          </div>
+          <div class="row image">
+              <div class="small-6 columns">
+              <img  class="drop-shadow" src="images/dabra/branding2.png">
+            </div>
+            <div class="small-6 columns">
+              <img class="drop-shadow"  src="images/dabra/branding3.png">
+            </div>
+          </div>
+      </div>
+    </div>
 
-          <img class="image" src="images/dabra/sketches.png">
+    <div id="7" class="row spacing-xl index-item">
+      <div class="medium-12 columns">
+        <h2 class="h2 spacing-s">Some key learnings</h2>
+          <ul class=" spacing-s">
+          <li>Working remotely requires extra effort to communicate clearly! Not only do I needed to present well-made prototypes, but also to set intentional time to explain my thought process.</li>
+          <li>Having a dedicated front-end developer working alongside with me was pretty cool. I learned lots about how to develop responsive web applications much more efficiently through my designs.</li>
+          <li>In a fast-paced young startup you have to get creative to research and prove your concepts and designs.</li>
+          <li>As the only designer, I was proud to be the spokesperson of the brand and loved evangelizing it across the Dabra team, the SAP.iO team, and our wonderful users!</li>
+          </ul>
+          <div class="row image">
+              <div class="small-6 columns">
+              <img src="images/dabra/dkom.jpg">
+            </div>
+            <div class="small-6 columns">
+              <img src="images/dabra/purim.jpg">
+            </div>
+          </div>
 
       </div>
     </div>
@@ -234,10 +292,10 @@
 <footer id="footer" class="row">
   <div class="medium-10 medium-push-1 columns">
     <div class="row columns">
-      <div class="medium-6 columns">
+      <div class="medium-4 columns">
         <p>&copy; Javier Yep 2020<span class="show-for-small-only"><br>Self-coded with love and a lot of coffe<br><a href="https://www.linkedin.com/in/javier-yep/" target="_blank">LinkedIn</a> · <a href="https://www.instagram.com/javier_yep/" target="_blank">Instagram</a> · <a href="https://dribbble.com/javieryep" target="_blank">Dribbble</a> · <a href="https://medium.com/@javieryep" target="_blank">Medium</a></span></p>
       </div>
-      <div class="medium-6 columns hide-for-small-only text-right">
+      <div class="medium-8 columns hide-for-small-only text-right">
         <p>Self-coded with love and a lot of coffee</p>
       </div>
     </div>
