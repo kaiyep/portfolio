@@ -1,4 +1,4 @@
-$(document).foundation()
+//$(document).foundation()
 
 /* Open when someone clicks on the span element */
 function openNav() {
@@ -8,6 +8,7 @@ function openNav() {
 
 /* Active state in menu on scroll */
 
+/*
 $(document).ready(function() {
   $(document).on("scroll", onScroll);
 
@@ -47,3 +48,4 @@ function onScroll(event) {
     }
   });
 }
+*/
