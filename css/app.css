@@ -132,7 +132,7 @@ ul {
 }
   
 li {
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.5rem;
 }
 
 
@@ -212,7 +212,7 @@ li {
 
 
 .home {
-    height: 92vh;
+    height: 90vh;
     position: relative;
 }
 
@@ -254,7 +254,7 @@ li {
 
 @media screen and (min-width: 40em) {
 .p-description {
-  padding: 10rem 2rem 0 2rem;
+  padding: 10rem 0rem 0 0rem;
 }
 .bottom-links {
   padding: 0rem 0rem 8rem 0rem;
@@ -335,7 +335,7 @@ li {
 
 @media screen and (min-width: 40em) {
 .hero-image {
-  height: 50rem;
+  height: 60rem;
 }
 }
 
