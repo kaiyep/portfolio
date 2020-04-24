@@ -212,7 +212,7 @@ li {
 
 
 .home {
-    height: 90vh;
+    height: 80vh;
     position: relative;
 }
 
@@ -254,7 +254,7 @@ li {
 
 @media screen and (min-width: 40em) {
 .p-description {
-  padding: 6rem 0rem 0rem 2rem;
+  padding: 0rem 0rem 0rem 2rem;
 }
 .bottom-links {
   padding: 0rem 0rem 8rem 0rem;
