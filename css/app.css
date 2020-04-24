@@ -216,10 +216,6 @@ li {
     position: relative;
 }
 
-#about {
-  padding-top: 6rem;
-}
-
 .vertical-center {
   margin: 0;
   position: inherit;
@@ -301,7 +297,7 @@ li {
 }
 
 .spacing-xl {
-  padding-bottom: 6rem;
+  padding-bottom: 8rem;
 }
 
 @media screen and (min-width: 40em) {
@@ -315,10 +311,10 @@ li {
 }
 
 .spacing-l {
-  padding-bottom: 6rem;
+  padding-bottom: 8rem;
 }
 .spacing-xl {
-  padding-bottom: 10rem;
+  padding-bottom: 12rem;
 }
 }
 
@@ -373,7 +369,7 @@ li {
 
 @media screen and (min-width: 40em) {
 .image-hover-wrapper a img {
-  height: 30rem;
+  height: 28rem;
 }
 }
 
