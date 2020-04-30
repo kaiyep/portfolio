@@ -8,8 +8,8 @@ body {
     font-family: 'Work Sans', sans-serif;
     letter-spacing: -0.03rem;
     color:#2A384D;
-    font-size: 1.2rem;
-    line-height: 1.4rem;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
     height: 100%;
 }
 
@@ -54,19 +54,24 @@ img {
 
 /* Text Styles */
 
+p {
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+}
+
 .h1 {
   font-family: 'Work Sans', sans-serif;
-  font-size: 3rem;
-  line-height: 3.2rem;
+  font-size: 4rem;
+  line-height: 4rem;
   letter-spacing: -0.15rem;
   margin: 0.3em 0;
 }
 
 .h2 {
   font-family: 'Work Sans', sans-serif;
-  font-size: 2.4rem;
-  line-height: 2.8rem;
-  letter-spacing: -0.1rem;
+  font-size: 2.8rem;
+  line-height: 3rem;
+  letter-spacing: -0.15rem;
   margin-bottom: 1rem;
 }
 
@@ -87,18 +92,19 @@ img {
 
 @media screen and (min-width: 40em) {
   .h1 {
-    font-size: 4.8rem;
-    line-height: 4.8rem;
-    letter-spacing: -0.2rem;
+    font-size: 6rem;
+    line-height: 5.5rem;
+    letter-spacing: -0.3rem;
     margin:0;}
   .h2 {
-    font-size: 3rem;
-    line-height: 3.2rem}
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+    letter-spacing: -0.15rem;}
   .h3 {
     font-size: 2.2rem;
     line-height: 2.6rem;}
   .body-large {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     line-height: 2rem;}
 }
 
@@ -187,7 +193,7 @@ li {
 /* Links inside the dropdown */
 .dropdown-content a {
   color: #2A384D;
-  padding: 1rem;
+  padding: 1rem 1.5rem;
   text-decoration: none;
   display: block;
 }
