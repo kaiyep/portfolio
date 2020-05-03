@@ -6,7 +6,6 @@ html {
 
 body {
     font-family: 'Work Sans', sans-serif;
-    letter-spacing: -0.03rem;
     color:#2A384D;
     font-size: 1.4rem;
     line-height: 1.6rem;
@@ -57,6 +56,7 @@ img {
 p {
   font-size: 1.4rem;
   line-height: 2.2rem;
+  letter-spacing: 0;
 }
 
 .h1 {
@@ -135,13 +135,15 @@ a:hover {
 
 ul {
   margin-left: 0rem;
-  margin-bottom: 2rem;
 }
   
 li {
   margin-bottom: 0.5rem;
 }
 
+.bullets {
+  margin-left:1.5rem;
+}
 
 
 
@@ -206,8 +208,7 @@ li {
   display: block;
 }
 
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {
+.dropdown:hover {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16), 0px 0px 2px rgba(0, 0, 0, 0.16);
   border-radius: 100%;
 }
@@ -267,21 +268,24 @@ li {
 
 #main {
   width: 100%;
-  min-height: calc(100vh - 3rem);
+  min-height: calc(100vh - 2.5rem);
 }
 
 #footer {
   width:100%;
   bottom:0;
-  height:3rem;
+  height:2.5rem;
   position:relative;
 }
 
 #footer p {
+  opacity: 0.5;
   bottom:0;
   margin-bottom: 0;
   position:relative;
   vertical-align: bottom;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
 }
 
 
@@ -496,3 +500,22 @@ li {
   border-radius: 4px;
 }
 
+
+.pullout {
+  background-color: #0062FF;
+  margin-bottom: 8rem;
+}
+
+.pullout p {
+  color: #fff;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+@media screen and (min-width: 40em) {
+.pullout {
+  margin-bottom: 12rem;
+}
+.pullout p {
+  padding: 8rem 0;
+}

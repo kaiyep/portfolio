@@ -58,7 +58,7 @@
 
 <header class="row column spacing-l">
   <div class="medium-10 medium-push-1 columns">
-    <h1 class="h1 spacing-m"><a class="a-active" href="https://dabra.ai/" target="_blank">Dabra.ai</a> — taking a startup MVP to the next level</h1>
+    <h1 class="h1 spacing-m"><a class="a-active" href="https://dabra.ai/" target="_blank">Dabra.ai</a> — upgrading a startup MVP</h1>
   </div>
 </header>
 
@@ -73,25 +73,43 @@
 
   <!-- Project -->
 
-  <div class="medium-12 columns">
+  <div class="medium-12">
     
-    <div id="1" class="row spacing-xl">
+    <div class="row columns spacing-xl">
       <div class="medium-8 medium-push-2 columns">
-          <h2 class="h2 spacing-s">The challenge</h2>
-          <p>The workplace has become increasingly collaborative and meetings have become the main context in which our relationships develop. The problem is that many of us usually have days full of back-to-back meetings, in which proper preparation for meetings feels impossible. Others just don’t prepare due to other seemingly more important tasks.</p>
-          <p class="spacing-s">Dabra aims to facilitate better workplace relationships by focusing on recurrent one-on-one (1:1) meetings, providing the tools to grow in effectiveness and empathy. How does it work? It provides a collaborative and private area for setting the meeting agenda and suggesting previously discussed topics when preparing for an upcoming meeting. With behavioral insights, Dabra also provides valuable information about colleagues which gives context for personalized conversations.</p>
+          <h2 class="h2 spacing-s">Role</h2>
+          <ul class="bullets">
+            <li>Product, marketing, brand and web design</li>
+            <li>Part of the in-house team in SAP.iO, the internal SAP incubator.</li>
+            <li>Worked alongside a dedicated front-end developer in San Francisco, and with the foundational team based in Israel</li>
+            <li>Duration: 1 year</li>
+          </ul>
+      </div>
+    </div>
+
+    <div class="row columns spacing-xl">
+      <div class="medium-8 medium-push-2 columns">
+          <h2 class="h2 spacing-s">What is Dabra?</h2>
+          <p>Dabra is a productivity tool designed to facilitate better recurrent one-on-one (1:1) meetings, in order to grow in effectiveness and empathy. How does it work? It’s a mobile-friendly web application that provides a collaborative and private area for setting the meeting agenda; it also suggests previously discussed topics when preparing for an upcoming meeting. Dabra also provides valuable information about colleagues through behavioral insights, which give context for personalized conversations.</p>
+          <p class="spacing-m">Why focus on 1:1 meetings? Because they play a crucial role in the development of workplace relationships, especially between managers and team members. The habit of not preparing for our 1:1 meetings can undermine trust and respect in our workplace relationships.</p>
           <div class="video-wrap">
            <iframe class="video-iframe" src="https://www.youtube-nocookie.com/embed/QrM9qv7MTWM?rel=0&modestbranding=1&showinfo=0&autohide=1&color=white" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
           </div>
       </div>
     </div>
 
-    <div id="2" class="row spacing-xl">
+    <div class="row columns spacing-xl">
       <div class="medium-8 medium-push-2 columns">
           <h2 class="h2 spacing-s">Two personas</h2>
-          <p>Dabra addresses two personas: managers and team members. Even though both benefit from better 1:1 meetings, they have different motivations. We decided to focus primarily on managers, as they would drive adoption by inviting their team members to Dabra.</p>
+          <p>The relationship between managers and team members is extremely important, which is why they became our main personas.</p>
+          <ul class="bullets">
+            <li>Managers are primarily focused on people and their development. Their goals are to be always ready to make their team members successful in their work.</li>
+            <li>On the other hand, team members are mostly focused on the projects themselves, and want to have successful relationships with their managers in order to thrive in their careers and get things done at work.</li>
+          </ul>
+          <p class="spacing-m">We decided to focus primarily on managers, as they would drive adoption by inviting their team members to Dabra.</p>
+
           <div class="image row">
-              <div class="medium-6 columns">
+            <div class="medium-6 columns">
               <img src="images/dabra/managers.png" alt="Managers">
             </div>
             <div class="medium-6 columns">
@@ -101,37 +119,37 @@
       </div>
     </div>
 
-    <div id="3" class="row spacing-xl">
+    <div class="row columns spacing-m">
       <div class="medium-8 medium-push-2 columns">
         <h2 class="h2 spacing-s">The product MVP</h2>
-          <p>The first product iteration was a Slack chatbot that reminded managers to prepare for their 1:1 meetings and keep track of their notes on a Slack conversation. However, managers didn’t interact with the chatbot regularly, one of the team’s key initial assumptions. The product pivoted into an email assistant instead, but was not efficient enough for managers to keep track of all meetings notes, scattered throughout countless emails. Dabra pivoted once again into a note-taking web application. This time, the user feedback was tremendously possitive. Users found it much more useful because they had a single platform to manage all their content.</p>
+          <p>Dabra went through a couple of iterations before taking off. The first one was a Slack chatbot that reminded managers to prepare for their 1:1 meetings and keep track of their notes. This iteration didn’t work well, so the product evolved into an email assistant with similar capabilities, but it was not efficient enough for managers to keep track of all meetings notes either. The product evolved once again into a note-taking web application, this time getting tremendous positive user feedback.</p>
 
           <img class="image" src="images/dabra/evolution.png">
 
-          <p>The product MVP was a progressive web application, with a a basic interface built using <a class="a-active" href="https://quasar.dev/" target="_blank">Quasar</a>—an open-source framework powered by Vue. The structure of the application worked using cards. Every meeting contained topics, which also contained notes. One of the main actions was revisiting previous topics, which users found very useful. On the downside, there were multiple assumptions made when this MVP was created that were wrong. We thought users would mainly take notes on their phones during meetings led to a mobile-first design approach. After diving into the usage statistics, the data revealed Dabra was used ~85% of the time on desktop, and only ~15% on mobile. Generous spacing between notes and buttons for fat thumbs made several users complain the content took too much space in their laptop screens, which required scrolling even through few notes.</p></p>
-
-          <div class="image row">
-            <div class="medium-9 columns">
-              <img class="drop-shadow" src="images/dabra/mvp_desktop.png" alt="MVP on desktop">
-            </div>
-              <div class="medium-3 columns hide-for-small-only">
-              <img class="drop-shadow" style="margin-top: 1rem;" src="images/dabra/mvp_mobile.png" alt="MVP on mobile">
-            </div>
-
-          </div>
+          <p>The product MVP was developed with a basic interface built using <a class="a-active" href="https://quasar.dev/" target="_blank">Quasar</a>—an open-source framework powered by the Vue framework.The UI element used to give structure to the content was cards, which worked as containers for different information levels. Meeting cards (1st level), contained topic cards (2nd level), which also contained note cards (3rd level).</p>
+          <p class="spacing-m">The MVP was very effective in some ways, but—naturally—also had multiple problems. The interaction users loved and that took center stage was revisiting topics. This interaction consisted in typing a topic and receiving suggestions of previously discussed topics. This saved users time to go through their notes to find what had been previously discussed. The MVP was also designed with some wrong assumptions. The expectation was that users would mainly take notes on their phones during meetings. After diving into the usage statistics, the data revealed Dabra was used ~85% of the time on desktop, and only ~15% on mobile. The card structure of the application had very generous spacing between notes and buttons—for fat thumbs using mobile devices. Users complained about having to look at their screens too often during their meetings to scroll through a few notes.</p>
       </div>
     </div>
 
-    <div id="4" class="row spacing-m">
+    <div class="row columns spacing-xl">
+      <div class="medium-10 medium-push-1 columns">
+        <div class="image row">
+          <div class="medium-9 columns">
+            <img class="drop-shadow" src="images/dabra/mvp_desktop.png" alt="MVP on desktop">
+          </div>
+            <div class="medium-3 columns hide-for-small-only">
+            <img class="drop-shadow" style="margin-top: 1rem;" src="images/dabra/mvp_mobile.png" alt="MVP on mobile">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row columns spacing-m">
       <div class="medium-8 medium-push-2 columns">
         <h2 class="h2 spacing-s">Taking it to the next level</h2>
-          <p>In order to create more information density, I decided to change the card-like structure of the UI by removing the meeting and topic containers. The intention was to give the app an ‘open-text’ feel but still using independent input field components. The gradient background was applied to the left panel to give the product more personality. Typeface became an important element in the UI. Without strong dividers or containers, the big bold titles became the natural transition between one meeting and the next.</p>
-      </div>
-    </div>
+          <p class="spacing-m">My role in the team as the only designer was to address the main UX issues, in order to increase the user adoption inside SAP. To accomplish that, I went through a series of whiteboard sessions and sketches to find a better architecture of the product. In order to create more information density, I decided to change the card-like structure of the UI by removing the meeting and topic containers. The intention was to give the app an ‘open-text’ feel but still using independent input field components. Typeface became an important element in the UI as the big bold titles became the natural transition between meetings.</p>
 
-    <div class="row image spacing-xl">
-      <div class="medium-10 medium-push-1 columns">
-        <div data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
+          <div class="spacing-m" data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
           <ul class="orbit-container drop-shadow image">
             <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#10094;</button>
             <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#10095;</button>
@@ -159,31 +177,42 @@
             <button data-slide="4"><span class="show-for-sr">Fifth slide details.</span></button>
           </nav>
         </div>
+
+          <p>We also encountered new and interesting use cases. One of the most important was the need for an audit trail of specific topic notes, to be used in performance reviews. For this reason, we introduced the notes history view, which consisted in a timeline of notes added to a recurrent topic throughout all the meetings. This became one of the product’s hottest features.</p>
       </div>
     </div>
 
-    <div id="5" class="row spacing-xl">
+
+    <div class="row columns spacing-xl">
+      <div class="medium-10 medium-push-1 columns">
+          <div class="video-wrap">
+           <iframe class="video-iframe" src="https://www.youtube-nocookie.com/embed/vTWwp_NznM8?rel=0&modestbranding=1&showinfo=0&autohide=1&color=white" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
+          </div>
+      </div>
+    </div>
+
+    <div class="row columns spacing-xl">
       <div class="medium-8 medium-push-2 columns">
         <h2 class="h2 spacing-s">Results</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-          <div class="row">
-            <div class="medium-8 medium-push-2 columns">
-              <img class="image" src="images/dabra/results.png" alt="Results of redesign">
-            </div>
-          </div>
-
+          <p>After the release of the product redesign, the number of weekly active recurrent users (WARU) increased by 4 times in just 3 months, a growth ratio that exceeded our expectations. Multiple high level executives started adopting and relying on Dabra for their daily meetings, which increased the visibility of the product inside and outside SAP.</p>
+          <p>I demoed Dabra during our annual Development Kick Off in the Bay Area, where I showed many SAP employees the benefits of prepared meeting agendas. SAP’s Chief Innovation Officer Max Wessel also demoed Dabra during the annual customer conference that year.</p>
       </div>
     </div>
 
 
+    <div class="row pullout">
+        <div class="medium-8 medium-push-2 small-10 small-push-1 columns">
+          <p class="h2">4x increase in weekly active recurrent users in 3 months</p>
+        </div>
+    </div>
 
-    <div id="6" class="row spacing-xl">
+
+    <div class="row columns spacing-xl">
       <div class="medium-8 medium-push-2 columns">
         <h2 class="h2 spacing-s">Happy branding</h2>
-          <p>In its former interations, Dabra was personified by a friendly robot that became Dabra’s isotype as well. The team referred to the product as a ‘personal assistant’. But this concept didn’t fit the latest iteration of the product, so the brand needed to evolve, as well as the brand language and communication.</p>
-          <p>The first concept I proposed was two overlapping speech bubbles forming an uppercase D, where Dabra stays in the center of the conversation but in a secondary place. After serious consideration, this option was discarded because speech bubbles are already used in many applications. The second proposal used a colon and uppercase d (:D), taken from the way users usually express the subject of one-on-one meetings. If Dabra is included on the meeting subject, the happy face appears:</p>
-          <p>This last concept seemed much more promising and in line with what we have thought of the product since the beginning. Dabra’s CEO, Vitaly Vainer, was particularly excited about this option. It showed much more potential as it is less generic, but still very fun and relatable. It dramatically breaks with the visual trend in enterprise software in its lack of emotion.</p>
+          <p>The Dabra mark was initially based on the chatbot idea. It was a friendly-looking green robot, that the team referred to as a ‘personal assistant’. But this concept didn’t fit the latest product iteration, so the brand needed to evolve, as well as the brand language and communication.</p>
+          <p>The new logo I proposed carried the same personality as the previous one, but it was more abstracted and communicated the emotion we wanted to convey (a happy face) rather than the medium (a chatbot). Visually, the colon idea came from the way users usually abbreviate their one-on-one meetings subjects; this means using the colon in between the attendees’ names.</p>
+          <p>Along with Dabra’s new logo, I contributed with multiple marketing assets such as illustrations, social media posts, presentations, etc. Finally I also redesigned the product website in order to accomodate a FAQ section, and a knowledge base as well.</p>
           <div class="row image">
               <div class="medium-12 columns">
               <img src="images/dabra/dabra-logo-large.png">
@@ -216,14 +245,14 @@
       </div>
     </div>
 
-    <div id="7" class="row spacing-l">
+    <div class="row columns spacing-l">
       <div class="medium-8 medium-push-2 columns">
         <h2 class="h2 spacing-s">Some key learnings</h2>
-          <ul class=" spacing-s">
-          <li>Working remotely requires extra effort to communicate clearly! Not only do I needed to present well-made prototypes, but also to set intentional time to explain my thought process.</li>
-          <li>Having a dedicated front-end developer working alongside with me was pretty cool. I learned lots about how to develop responsive web applications much more efficiently through my designs.</li>
-          <li>In a fast-paced young startup you have to get creative to research and prove your concepts and designs.</li>
-          <li>As the only designer, I was proud to be the spokesperson of the brand and loved evangelizing it across the Dabra team, the SAP.iO team, and our wonderful users!</li>
+          <ul class="spacing-m bullets">
+          <li>Working remotely requires extra effort to communicate clearly. I learned to setting intentional time to explain my thought process.</li>
+          <li>Having a dedicated front-end developer helped me learn alot about how to develop responsive web applications more efficiently.</li>
+          <li>As part of a fast-paced young startup, I had to get creative to research and test my designs by reaching out to those whose profile would fit our manager persona for direct feedback.</li>
+          <li>As the only designer in the team, I became the spokesperson of the product and brand inside SAP and our external users.</li>
           </ul>
           <div class="row image">
               <div class="small-6 columns">
@@ -240,7 +269,7 @@
     <nav class="row columns spacing-l">
     <div class="row medium-8 medium-push-2">
       <div class="small-8 medium-9 columns text-left">
-        <a class="h3 a-active hide-for-small-only"  data-tooltip tabindex="1" data-position="bottom" data-alignment="left" title="SAP CX Live — crafting prototypes to gain traction" href="sapcx.html">Next Project</a>
+        <a class="h3 a-active hide-for-small-only"  data-tooltip tabindex="1" data-position="bottom" data-alignment="left" title="SAP CX Live — crafting B2B2C prototypes" href="sapcx.html">Next Project</a>
         <a class="h3 a-active show-for-small-only" href="sapcx.html">Next Project</a>
       </div>
       <div class="small-4 medium-3 columns text-right">
