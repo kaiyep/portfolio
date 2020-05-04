@@ -89,8 +89,8 @@
 
     <div class="row columns spacing-xl">
       <div class="medium-8 medium-push-2 columns">
-          <h2 class="h2 spacing-s">What is Dabra?</h2>
-          <p>Dabra is a productivity tool designed to facilitate better recurrent one-on-one (1:1) meetings, in order to grow in effectiveness and empathy. How does it work? It’s a mobile-friendly web application that provides a collaborative and private area for setting the meeting agenda; it also suggests previously discussed topics when preparing for an upcoming meeting. Dabra also provides valuable information about colleagues through behavioral insights, which give context for personalized conversations.</p>
+          <h2 class="h2 spacing-s">What is <a class="a-active" href="https://dabra.ai/" target="_blank">Dabra</a>?</h2>
+          <p>Dabra is a productivity tool designed to facilitate better recurrent one-on-one (1:1) meetings, in order to grow in effectiveness and empathy. How does it work? It’s a mobile-friendly web application to set a shared meeting agenda. Dabra suggests previously discussed topics when preparing for upcoming meetings. It provides valuable information about colleagues through behavioral insights, which give context for personalized conversations.</p>
           <p class="spacing-m">Why focus on 1:1 meetings? Because they play a crucial role in the development of workplace relationships, especially between managers and team members. The habit of not preparing for our 1:1 meetings can undermine trust and respect in our workplace relationships.</p>
           <div class="video-wrap">
            <iframe class="video-iframe" src="https://www.youtube-nocookie.com/embed/QrM9qv7MTWM?rel=0&modestbranding=1&showinfo=0&autohide=1&color=white" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
@@ -106,7 +106,7 @@
             <li>Managers are primarily focused on people and their development. Their goals are to be always ready to make their team members successful in their work.</li>
             <li>Team members are mostly focused on the projects themselves, and want to have successful relationships with their managers in order to thrive in their careers and get things done at work.</li>
           </ul>
-          <p class="spacing-m">We decided to focus primarily on managers, as they would drive adoption by inviting their team members to Dabra.</p>
+          <p class="spacing-m">We decided to focus primarily on managers, as they would have more leverage to drive adoption by inviting their team members.</p>
 
           <div class="image row">
             <div class="medium-6 columns">
@@ -127,7 +127,7 @@
           <img class="image" src="images/dabra/evolution.png">
 
           <p>The product MVP was developed with a basic interface built using <a class="a-active" href="https://quasar.dev/" target="_blank">Quasar</a>—an open-source framework powered by the Vue framework. The UI element used to give structure to the content was cards, which worked as containers for different information levels. Meeting cards (1st level), contained topic cards (2nd level), which also contained note cards (3rd level).</p>
-          <p>The MVP was partially effective, but it had multiple issues as well. The interaction users loved and that took center stage was revisiting topics. This interaction consisted in typing a topic and receiving suggestions of previously discussed topics. This saved users time to go through their notes to find what had been previously discussed. The MVP was also designed with some wrong assumptions. The expectation was that users would mainly take notes on their phones during meetings. After diving into the usage statistics,</p>
+          <p>The interaction users loved and that was the product's highlight was revisiting topics. It consisted in typing a topic and receiving suggestions of previously discussed topics. This saved users time to go through their notes to find what had been previously discussed. The MVP was also designed with some wrong assumptions. The expectation was that users would mainly take notes on their phones during meetings. After diving into the usage statistics,</p>
           <div class="pullquote"><p class="h3">the data revealed Dabra was used ~85% of the time on desktop, and only ~15% on mobile.</p></div>
           <p>The card structure of the application had very generous spacing between notes and buttons—for fat thumbs using mobile devices. Users complained about having to look at their screens too often during their meetings to scroll through a few notes.</p>
       </div>
@@ -149,7 +149,38 @@
     <div class="row columns spacing-m">
       <div class="medium-8 medium-push-2 columns">
         <h2 class="h2 spacing-s">Taking it to the next level</h2>
-          <p class="spacing-m">My role in the team as the only designer was to address the main UX issues, in order to increase the user adoption inside SAP. To accomplish that, I went through a series of whiteboard sessions and sketches to find a better architecture of the product. In order to create more information density, I decided to change the card-like structure of the UI by removing the meeting and topic containers. The intention was to give the app an ‘open-text’ feel but still using independent input field components. Typeface became an important element in the UI as the big bold titles became the natural transition between meetings.</p>
+          <p class="spacing-m">My role in the team as the only designer was to address the main UX issues, in order to increase the user adoption inside SAP. We gathered a series of customer requests to identify what tasks the users were trying to accomplish. I also conducted interviews to heavy users located in the Bay Area.
+
+          <div class="spacing-m">
+            <table>
+              <thead>
+                <tr>
+                  <th>User request</th>
+                  <th>Job-to-be-done</th>
+                  <th>Proposed solution</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>“It takes a lot of scrolling for me to see one meeting. I don’t like to be so distracted.”</td>
+                  <td>To view meeting content at a glance during a meeting.</td>
+                  <td>Increasing information density</td>
+                </tr>
+                <tr>
+                  <td>“I would sign up if the product also had a space for content that only I can see.”</td>
+                  <td>Adding sensitive information that cannot be shared (at least initially)</td>
+                  <td>Shared and private areas for meeting topics</td>
+                </tr>
+                <tr>
+                  <td>“Dabra would be perfect to review my meeting notes for performance reviews.”</td>
+                  <td>Reviewing the history of notes of every topic</td>
+                  <td>History of notes per topic, per meeting</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p class="spacing-m">With this information, I whiteboarded multiple options to find a better architecture of the product. In order to create more information density, I changed the card-based UI by removing the meeting and topic containers in order to give the app a text editor appearance. Typeface became an important element in the UI as the big bold titles became the natural transition between meetings. The private area was added as a secondary tab in the meeting frame after multiple iterations. Finally, we introduced the notes history view, which consisted in a timeline of notes added to a recurrent topic throughout all the meetings. This became one of the product’s hottest features.</p>
 
           <div class="spacing-m" data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
           <ul class="orbit-container drop-shadow image">
@@ -180,7 +211,7 @@
           </nav>
         </div>
 
-          <p>We also encountered new and interesting use cases. One of the most important was the need for an audit trail of specific topic notes, to be used in performance reviews. For this reason, we introduced the notes history view, which consisted in a timeline of notes added to a recurrent topic throughout all the meetings. This became one of the product’s hottest features.</p>
+          <p>This product demo shows the main product enhancements. I prepared the following demo to be presented by SAP’s Chief Innovation Officer <a class="a-active" href="https://www.linkedin.com/in/maxwellelliot/" target="_blank">Max Wessel</a> during the annual customer conference that year.</p>
       </div>
     </div>
 
@@ -197,7 +228,7 @@
       <div class="medium-8 medium-push-2 columns">
         <h2 class="h2 spacing-s">Results</h2>
           <p>After the release of the product redesign, the number of weekly active recurrent users (WARU) increased by 4 times in just 3 months, a growth ratio that exceeded our expectations. Multiple high level executives started adopting and relying on Dabra for their daily meetings, which increased the visibility of the product inside and outside SAP.</p>
-          <p>I demoed Dabra during our annual <a class="a-active" href="https://twitter.com/hashtag/dkom" target="_blank">Development Kick Off</a> in the Bay Area, where I showed many SAP employees the benefits of prepared meeting agendas. SAP’s Chief Innovation Officer <a class="a-active" href="https://www.linkedin.com/in/maxwellelliot/" target="_blank">Max Wessel</a> also demoed Dabra during the annual customer conference that year.</p>
+          <p>I had the opportunity to demo Dabra during our annual <a class="a-active" href="https://twitter.com/hashtag/dkom" target="_blank">Development Kick Off</a> in the Bay Area, to many SAP employees, many of which signed up to Dabra.
       </div>
     </div>
 
@@ -213,7 +244,7 @@
     <div class="row columns spacing-xl">
       <div class="medium-8 medium-push-2 columns">
         <h2 class="h2 spacing-s">Happy branding</h2>
-          <p>The Dabra mark was initially based on the chatbot idea. It was a friendly-looking green robot, that the team referred to as a ‘personal assistant’. But this concept didn’t fit the latest product iteration, so the brand needed to evolve, as well as the brand language and communication.</p>
+          <p>The Dabra mark was initially based on the chatbot idea. It was a friendly-looking green robot, but sadly it didn’t fit the latest product iteration anymore. The brand needed to evolve, as well as our communication about the product.</p>
           <p>The new logo I proposed carried the same personality as the previous one, but it was more abstracted and communicated the emotion we wanted to convey (a happy face) rather than the medium (a chatbot). Visually, the colon idea came from the way users usually abbreviate their one-on-one meetings subjects; this means using the colon in between the attendees’ names.</p>
           <p>Along with Dabra’s new logo, I contributed with multiple marketing assets such as illustrations, social media posts, presentations, etc. Finally I also redesigned the product website in order to accomodate a FAQ section, and a knowledge base as well.</p>
           <div class="row image">
