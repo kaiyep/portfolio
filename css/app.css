@@ -296,36 +296,36 @@ li {
 
 
 .spacing-s {
-  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .spacing-m {
-  padding-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 .spacing-l {
-  padding-bottom: 4rem;
+  margin-bottom: 4rem;
 }
 
 .spacing-xl {
-  padding-bottom: 8rem;
+  margin-bottom: 8rem;
 }
 
 @media screen and (min-width: 40em) {
 
 .spacing-s {
-  padding-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .spacing-m {
-  padding-bottom: 4rem;
+  margin-bottom: 4rem;
 }
 
 .spacing-l {
-  padding-bottom: 8rem;
+  margin-bottom: 8rem;
 }
 .spacing-xl {
-  padding-bottom: 12rem;
+  margin-bottom: 12rem;
 }
 }
 
@@ -544,4 +544,11 @@ td {
 th {
   font-weight: 600 !important;
   color:#2A384D;
+}
+
+figcaption {
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  opacity: .5;
 }
