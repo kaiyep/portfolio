@@ -1,5 +1,15 @@
-<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="24" cy="24" r="24" fill="#0062FF"/>
-<path d="M17.1546 15H21.5187V27.1829C21.5187 28.313 21.2485 29.3211 20.7082 30.2073C20.1762 31.0935 19.4281 31.7805 18.4638 32.2683C17.5079 32.7561 16.4397 33 15.2594 33C13.281 33 11.7431 32.5122 10.6459 31.5366C9.54863 30.561 9 29.1789 9 27.3903H13.389C13.389 28.2033 13.5303 28.7927 13.813 29.1585C14.1039 29.5244 14.586 29.7073 15.2594 29.7073C15.8662 29.7073 16.3317 29.4878 16.6559 29.0488C16.9884 28.6016 17.1546 27.9797 17.1546 27.1829V15Z" fill="white"/>
-<path d="M30.9327 22.7073L34.2743 15H39L33.1521 26.3781V32.7561H28.7132V26.3781L22.8778 15H27.5786L30.9327 22.7073Z" fill="white"/>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.1.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#0062FF;}
+	.st1{fill:#FFFFFF;}
+</style>
+<circle class="st0" cx="20" cy="20" r="20"/>
+<g>
+	<path class="st1" d="M18.2,21.4c0,3.3-2,5.3-5.4,5.3c-3.7,0-5.3-2.2-4.7-5.3l2.8-0.5c-0.3,2.4,0.2,3.5,2,3.5c1.8,0,2.4-1.1,2.4-3.3
+		v-8.3h2.9V21.4z"/>
+	<path class="st1" d="M27.7,21.3v5.1h-2.9v-5.1L20,12.7h3.1l2.2,4.1l1,2.2l1.1-2.2l2.2-4.1h3L27.7,21.3z"/>
+</g>
 </svg>

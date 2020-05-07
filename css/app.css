@@ -100,15 +100,20 @@ li {
   margin-bottom: 1.5rem;
 }
 
+.small-text {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
 @media screen and (min-width: 40em) {
   p {
     font-size: 1.5rem;
     line-height: 2.25rem;
-    letter-spacing: 0;}
+    letter-spacing: -0.025rem;}
   li {
     margin-bottom: 0.5rem;
     font-size: 1.5rem;
-    line-height: 2.5rem;
+    line-height: 2.25rem;
     letter-spacing: 0;}
   .h1 {
     font-size: 6rem;
@@ -126,6 +131,10 @@ li {
   .body-large {
     font-size: 2rem;
     line-height: 2.5rem;}
+  .small-text {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+}
 }
 
 a {
@@ -282,24 +291,21 @@ a:hover {
 
 #main {
   width: 100%;
-  min-height: calc(100vh - 2.5rem);
+  min-height: calc(100vh - 2rem);
 }
 
-#footer {
+.footer-container {
   width:100%;
   bottom:0;
-  height:2.5rem;
+  height:2rem;
   position:relative;
 }
 
-#footer p {
-  opacity: 0.5;
+.footer {
+  opacity: 0.75;
   bottom:0;
-  margin-bottom: 0;
   position:relative;
   vertical-align: bottom;
-  font-size: 1.2rem;
-  line-height: 1.6rem;
 }
 
 
@@ -574,7 +580,13 @@ th {
 
 figcaption {
   text-align: center;
-  font-size: 1rem;
+  font-size: .75rem;
   line-height: 1rem;
-  opacity: .5;
+  opacity: .75;
 }
+
+@media screen and (min-width: 40em) {
+  figcaption {
+    font-size: 1rem;
+    line-height: 1.25rem;}
+  }
