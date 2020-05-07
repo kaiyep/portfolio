@@ -7,9 +7,8 @@ html {
 body {
     font-family: 'Work Sans', sans-serif;
     color:#2A384D;
-    font-size: 1.4rem;
-    line-height: 1.6rem;
     height: 100%;
+    font-size: 16px;
 }
 
 img {
@@ -54,43 +53,63 @@ img {
 /* Text Styles */
 
 p {
-  font-size: 1.4rem;
-  line-height: 2.2rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: 0;
+}
+
+ul {
+  margin-left: 0rem;
+}
+  
+li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
   letter-spacing: 0;
 }
 
 .h1 {
   font-family: 'Work Sans', sans-serif;
-  font-size: 4rem;
-  line-height: 4rem;
+  font-size: 3rem;
+  line-height: 3rem;
   letter-spacing: -0.15rem;
   margin: 0.3em 0;
 }
 
 .h2 {
   font-family: 'Work Sans', sans-serif;
-  font-size: 2.8rem;
-  line-height: 3.2rem;
+  font-size: 2rem;
+  line-height: 2.5rem;
   letter-spacing: -0.05rem;
   margin-bottom: 1rem;
 }
 
 .h3 {
   font-family: 'Work Sans', sans-serif;
-  font-size: 2rem;
-  line-height: 2.4rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
   letter-spacing: -0.05rem;
   margin-bottom: 1rem;
 }
 
 .body-large {
-  font-size: 1.4rem;
-  line-height: 1.8rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
   letter-spacing: -0.05rem;
   margin-bottom: 1.5rem;
 }
 
 @media screen and (min-width: 40em) {
+  p {
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    letter-spacing: 0;}
+  li {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    letter-spacing: 0;}
   .h1 {
     font-size: 6rem;
     line-height: 5.5rem;
@@ -98,15 +117,15 @@ p {
     margin:0;}
   .h2 {
     font-size: 3.5rem;
-    line-height: 4rem;
+    line-height: 3.75rem;
     letter-spacing: -0.15rem;}
   .h3 {
-    font-size: 2.2rem;
-    line-height: 2.8rem;
+    font-size: 2.5rem;
+    line-height: 2.75rem;
     letter-spacing: -0.1rem;}
   .body-large {
-    font-size: 1.8rem;
-    line-height: 2rem;}
+    font-size: 2rem;
+    line-height: 2.5rem;}
 }
 
 a {
@@ -132,14 +151,6 @@ a:hover {
 
 .a-inactive:hover {
   color: #0062FF;
-}
-
-ul {
-  margin-left: 0rem;
-}
-  
-li {
-  margin-bottom: 0.5rem;
 }
 
 .bullets {
@@ -196,6 +207,8 @@ li {
 /* Links inside the dropdown */
 .dropdown-content a {
   color: #2A384D;
+  font-size: 1.5rem;
+  line-height: 2rem;
   padding: 1rem 1.5rem;
   text-decoration: none;
   display: block;
@@ -240,13 +253,13 @@ li {
 .tooltip {
   background-color: #111D29;
   color: #fff;
-  font-size: 1.4rem;
-  line-height: 1.6rem;
-  padding: 2rem;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  padding: 1.5rem;
   position: absolute;
   z-index: 10;
   top: calc(100% + 0.5rem);
-  max-width: 30rem !important;
+  max-width: 25rem !important;
   border-radius: 4px;
   box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.16), 0px 0px 2px rgba(0, 0, 0, 0.16);}
 
@@ -314,7 +327,7 @@ li {
 @media screen and (min-width: 40em) {
 
 .spacing-s {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .spacing-m {
@@ -350,7 +363,7 @@ li {
   padding:1rem 6rem 0 0;
 }
 
-.index-item{
+. {
   padding-top:2rem;
 }
 
@@ -516,25 +529,38 @@ li {
   padding: 4rem 0;
 }
 
-@media screen and (min-width: 40em) {
-.pullout {
-  margin-bottom: 12rem;
-}
-.pullout-content {
-  padding: 8rem 0;
-}}
-
 .pullquote {
   border-left: 4px solid #0062FF;
+  margin-bottom: 1rem;
 }
 
-.pullquote p {
-  padding: 2rem 0 2rem 3rem;
+.quote {
+  padding: 1rem 0 0 1.5rem;
+}
+
+
+@media screen and (min-width: 40em) {
+.pullout {
+  margin-bottom: 12rem;}
+
+.pullout-content {
+  padding: 8rem 0;}
+
+.quote {
+  padding: 2rem 0 1rem 3rem;}
 }
 
 table {
-  font-size: 1.2rem;
-  line-height: 1.8rem;
+  font-size: .75rem;
+  line-height: 1rem;
+  overflow: scroll;
+}
+
+@media screen and (min-width: 40em) {
+  table {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    letter-spacing: 0;}
 }
 
 td {
@@ -549,6 +575,6 @@ th {
 figcaption {
   text-align: center;
   font-size: 1rem;
-  line-height: 1.2rem;
+  line-height: 1rem;
   opacity: .5;
 }
