@@ -633,7 +633,7 @@ figcaption {
 
 
 
-
+/*
 
 
 .lightbox-src img {
@@ -671,11 +671,6 @@ figcaption {
   transition: 0.8s cubic-bezier(0.7, 0, 0.4, 1);
   transform-style: preserve-3d;
 }
-
-
-/*.lightbox:hover img{
-  transform: translate(-50%, -50%) rotateY(180deg);
-}*/
 
 [class^="arrow"] {
   height: 200px;
@@ -752,4 +747,144 @@ figcaption {
   top: 0;
   left: 0;
 }
+*/
 
+
+
+
+
+
+
+
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 5;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: white;
+  max-height: 100vh;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: white;
+  padding-top: 2rem;
+  margin: auto;
+  padding: 0;
+  height: 90vh;
+}
+
+
+/* Caption text */
+.caption-container {
+  width: 100%;
+  text-align: center;
+  color: #2A384D;
+  height: 3rem;
+}
+
+/* Modal image */
+.modal-image {
+  height: calc(100vh - 8rem);
+}
+
+/* The Close Button */
+.close {
+  color: #2A384D;
+  position: absolute;
+  top: 3rem;
+  right: 2rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #0062FF;
+  text-decoration: none;
+  cursor: pointer;
+  z-index: 7;
+}
+
+/* Hide the slides by default */
+.mySlides {
+  display: none;
+}
+
+.mySlides img {
+  position: absolute;
+  padding-top: 3rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotateY(0deg);
+  max-height:100%;
+  max-width:100%;
+  z-index: 6;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 1.5rem;
+  margin-top: -50px;
+  color: #2A384D;
+  font-weight: bold;
+  font-size: 2rem;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(42, 56, 77, 0.05);
+  color: #0062FF;
+}
+
+.demonav {
+  height: 5rem;
+  margin: auto;
+  display: block;
+  padding: 0 1rem;
+}
+
+img.demo {
+  opacity: 0.6;
+  height: 4rem;
+  width: 4rem;
+  margin: 0.5rem 0.25rem;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  color: rgba(42, 56, 77, 0.5);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16), 0px 0px 2px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
+}

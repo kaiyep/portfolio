@@ -110,16 +110,18 @@
     </div>
   </div>
 
-  <div class="masonry-css spacing-xl">
-    <div class="lightbox-src">
-      <img class="spacing-s hover-shadow" src="images/visuals/45_min_meetings.jpg">
-      <img class="spacing-s hover-shadow" src="images/visuals/change_your_pajamas.jpg">
-      <img class="spacing-s hover-shadow" src="images/visuals/focused.jpg">
-      <img class="spacing-s hover-shadow" src="images/visuals/remote_lunch.jpg">
-      <img class="spacing-s hover-shadow" src="images/visuals/turn_off_notifications.jpg">
-      <img class="spacing-s hover-shadow" src="images/visuals/space.png">
-      <img class="spacing-s hover-shadow" src="images/visuals/lets_ketchup.jpg">
-      <img class="spacing-s hover-shadow" src="images/visuals/commute_meditation.jpg">
+  <div id="remotework" class="row spacing-xl">
+    <div class="medium-6 columns">
+      <img src="images/visuals/45_min_meetings.jpg" onclick="openModal();currentSlide(1)" class="image hover-shadow">
+    </div>
+    <div class="medium-6 columns">
+      <img src="images/visuals/change_your_pajamas.jpg" onclick="openModal();currentSlide(2)" class="image hover-shadow">
+    </div>
+    <div class="medium-6 columns">
+      <img src="images/visuals/focused.jpg" onclick="openModal();currentSlide(3)" class="image hover-shadow">
+    </div>
+    <div class="medium-6 columns">
+      <img src="images/visuals/remote_lunch.jpg" onclick="openModal();currentSlide(4)" class="image hover-shadow">
     </div>
   </div>
 
@@ -169,11 +171,44 @@
 </main>
 
 
-<div class="lightbox">
-  <div class="title"></div>
-  <div class="arrowr"></div>
-  <div class="arrowl"></div>
-  <div class="close"></div>
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+
+    <!-- Caption text -->
+    <div class="row caption-container">
+        <p class="small-text" id="caption" style="line-height: 3rem;"></p>
+    </div>
+
+    <div class="row modal-img">
+      <div class="mySlides">
+        <img  src="images/visuals/45_min_meetings.jpg">
+      </div>
+      <div class="mySlides">
+        <img src="images/visuals/change_your_pajamas.jpg">
+      </div>
+      <div class="mySlides">
+        <img src="images/visuals/focused.jpg">
+      </div>
+      <div class="mySlides">
+        <img src="images/visuals/remote_lunch.jpg">
+      </div>
+    </div>
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  </div>
+    <!-- Thumbnail image controls -->
+    <div class="demonav">
+      <img class="demo" src="images/visuals/45_min_meetings.jpg" onclick="currentSlide(1)" alt="45-minute meetings">
+      <img class="demo" src="images/visuals/change_your_pajamas.jpg" onclick="currentSlide(2)" alt="Snow">
+      <img class="demo" src="images/visuals/focused.jpg" onclick="currentSlide(3)" alt="Mountains">
+      <img class="demo" src="images/visuals/remote_lunch.jpg" onclick="currentSlide(4)" alt="Lights">
+    </div>
+
 </div>
 
 

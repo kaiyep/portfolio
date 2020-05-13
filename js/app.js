@@ -54,69 +54,43 @@ function onScroll(event) {
 */
 
 
-$(window).load(function() {
+// Open the Modal
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
 
-  $(".lightbox-src img").click(function() {
-    $(".lightbox").fadeIn(300);
-    $(".lightbox").append("<img src='" + $(this).attr("src") + "' alt='" + $(this).attr("alt") + "' />");
-    $(".filter").css("background-image", "url(" + $(this).attr("src") + ")");
-    /*$(".title").append("<h1>" + $(this).attr("alt") + "</h1>");*/
-    $("html").css("overflow", "hidden");
-    if ($(this).is(":last-child")) {
-      $(".arrowr").css("display", "none");
-      $(".arrowl").css("display", "block");
-    } else if ($(this).is(":first-child")) {
-      $(".arrowr").css("display", "block");
-      $(".arrowl").css("display", "none");
-    } else {
-      $(".arrowr").css("display", "block");
-      $(".arrowl").css("display", "block");
-    }
-  });
+// Close the Modal
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
 
-  $(".close").click(function() {
-    $(".lightbox").fadeOut(300);
-    $("h1").remove();
-    $(".lightbox img").remove();
-    $("html").css("overflow", "auto");
-  });
+var slideIndex = 1;
+showSlides(slideIndex);
 
-  $(document).keyup(function(e) {
-    if (e.keyCode == 27) {
-      $(".lightbox").fadeOut(300);
-      $(".lightbox img").remove();
-      $("html").css("overflow", "auto");
-    }
-  });
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
 
-  $(".arrowr").click(function() {
-    var imgSrc = $(".lightbox img").attr("src");
-    var search = $(".lightbox-src").find("img[src$='" + imgSrc + "']");
-    var newImage = search.next().attr("src");
-    /*$(".lightbox img").attr("src", search.next());*/
-    $(".lightbox img").attr("src", newImage);
-    $(".filter").css("background-image", "url(" + newImage + ")");
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
 
-    if (!search.next().is(":last-child")) {
-      $(".arrowl").css("display", "block");
-    } else {
-      $(".arrowr").css("display", "none");
-    }
-  });
-
-  $(".arrowl").click(function() {
-    var imgSrc = $(".lightbox img").attr("src");
-    var search = $(".lightbox-src").find("img[src$='" + imgSrc + "']");
-    var newImage = search.prev().attr("src");
-    /*$(".lightbox img").attr("src", search.next());*/
-    $(".lightbox img").attr("src", newImage);
-    $(".filter").css("background-image", "url(" + newImage + ")");
-
-    if (!search.prev().is(":first-child")) {
-      $(".arrowr").css("display", "block");
-    } else {
-      $(".arrowl").css("display", "none");
-    }
-  });
-
-});
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
