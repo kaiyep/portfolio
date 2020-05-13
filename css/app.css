@@ -803,6 +803,7 @@ figcaption {
   right: 2rem;
   font-size: 2.5rem;
   font-weight: bold;
+  z-index: 10;
 }
 
 .close:hover,
@@ -827,6 +828,7 @@ figcaption {
   max-height:100%;
   max-width:100%;
   z-index: 6;
+  border-radius: 0px;
 }
 
 /* Next & previous buttons */
@@ -843,6 +845,7 @@ figcaption {
   font-size: 2rem;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
+  z-index: 10;
   user-select: none;
   -webkit-user-select: none;
 }
