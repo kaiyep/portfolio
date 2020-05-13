@@ -864,30 +864,41 @@ figcaption {
 }
 
 .demonav {
-  height: 5rem;
+  position: absolute;
+  bottom: 0px;
   margin: auto;
   display: block;
-  padding: 0 1rem;
+  padding: 0.5rem;
 }
 
 img.demo {
   opacity: 0.6;
-  height: 4rem;
-  width: 4rem;
-  margin: 0.5rem 0.25rem;
+  height: 3rem;
+  width: 3rem;
+  margin: 0.25rem 0;
 }
 
-.active,
+.active-img,
 .demo:hover {
   opacity: 1;
 }
 
-img.hover-shadow {
+img.hover-image {
   transition: 0.3s;
 }
 
-.hover-shadow:hover {
-  color: rgba(42, 56, 77, 0.5);
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16), 0px 0px 2px rgba(0, 0, 0, 0.16);
+.hover-image:hover {
   cursor: pointer;
+  opacity: 0.6;
+}
+
+
+.disable-scrollbars::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* Chrome/Safari/Webkit */
+}
+
+.disable-scrollbars {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* IE 10+ */
 }
