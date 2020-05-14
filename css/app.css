@@ -295,13 +295,13 @@ a:hover {
 
 #main {
   width: 100%;
-  min-height: calc(100vh - 2rem);
+  min-height: calc(100vh - 3rem);
 }
 
 .footer-container {
   width:100%;
   bottom:0;
-  height:2rem;
+  height:3rem;
   position:relative;
 }
 
@@ -312,7 +312,10 @@ a:hover {
   vertical-align: bottom;
 }
 
-
+.footer p {
+  margin:0px;
+  line-height: 3rem;
+}
 
 
 /* Spacing */
@@ -358,7 +361,7 @@ a:hover {
 
 .hero-image{
   width:100%;
-  height: 30rem;
+  height: 25rem;
   border-radius: 0px;
 
 }
@@ -873,6 +876,10 @@ figcaption {
   padding: 0.5rem;
   overflow: auto;
   white-space: nowrap;
+}
+
+.demo-nav {
+  -webkit-overflow-scrolling: touch;
 }
 
 img.demo {
