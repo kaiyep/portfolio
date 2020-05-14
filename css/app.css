@@ -863,6 +863,7 @@ figcaption {
 }
 
 .demonav {
+  height: 5rem;
   width: 100%;
   background: white;
   position: absolute;
@@ -870,6 +871,8 @@ figcaption {
   margin: auto;
   display: block;
   padding: 0.5rem;
+  overflow: auto;
+  white-space: nowrap;
 }
 
 img.demo {
@@ -877,6 +880,7 @@ img.demo {
   height: 3rem;
   width: 3rem;
   margin: 0.25rem 0;
+  display:inline-block;
 }
 
 .active-img,
