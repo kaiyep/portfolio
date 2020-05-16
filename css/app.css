@@ -527,6 +527,17 @@ a:hover {
   border-radius: 4px;
 }
 
+.video-container {
+  width:100%;
+}
+
+.video {
+  position: relative;
+  right: -50%;
+  transform: translateX(-50%);
+  max-height: 90vh;
+}
+
 
 .pullout {
   background-color: #0062FF;
