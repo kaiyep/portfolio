@@ -564,7 +564,7 @@ a:hover {
 }
 
 .quote {
-  padding: 1rem 0 1rem 1.5rem;
+  padding: .75rem 0 .25rem 1.5rem;
 }
 
 .quote p {
@@ -576,10 +576,15 @@ a:hover {
   margin-bottom: 12rem;}
 
 .pullout-content {
-  padding: 8rem 0;}
+  padding: 8rem 0;
+}
+
+.pullquote {
+  padding: 0rem;
+}
 
 .quote {
-  padding: 2rem 0 2rem 3rem;}
+  padding: 1rem 0 1rem 2rem;}
 }
 
 table {
