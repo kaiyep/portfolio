@@ -202,7 +202,7 @@ a:hover {
 .dropdown {
   position: relative;
   display: inline-block;
-  z-index: 4;
+  z-index: 10;
 }
 
 .dropdown-content {
@@ -215,8 +215,12 @@ a:hover {
   min-width: 160px;
   left:0;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.16), 0px 0px 2px rgba(0, 0, 0, 0.16);
-  z-index: 1;
+  z-index: 10;
 }
+
+.sticky.is-stuck {
+  position: fixed;
+  z-index: 0; }
 
 /* Links inside the dropdown */
 .dropdown-content a {
@@ -243,10 +247,6 @@ a:hover {
 
 .currentpage {
   border-left: 4px solid #0062FF;
-}
-
-#menuleft {
-  z-index: 3
 }
 
 
@@ -366,14 +366,15 @@ a:hover {
 
 .hero-image{
   width:100%;
-  height: 25rem;
+  height: auto;
   border-radius: 0px;
 
 }
 
 @media screen and (min-width: 40em) {
 .hero-image {
-  height: 60rem;
+  height: auto;
+  border-radius: 4px;
 }
 }
 
@@ -381,11 +382,6 @@ a:hover {
   padding:0 6rem 0 0;
   z-index: 0;
 }
-
-. {
-  padding-top:2rem;
-}
-
 
 
 /* Image overlay*/
@@ -575,7 +571,8 @@ a:hover {
 
 @media screen and (min-width: 40em) {
 .pullout {
-  margin-bottom: 12rem;}
+  margin-bottom: 12rem;
+  border-radius: 4px}
 
 .pullout-content {
   padding: 8rem 0;
