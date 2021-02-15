@@ -56,12 +56,85 @@ img {
   margin:auto;
 }*/
 
+
+/* Header Stylings */
+
+.intro {
+  cursor: pointer;
+  margin: 0;
+}
+
+.intro p:hover {
+	color: #0062FF;
+}
+
+.description {
+  color: #0062FF;
+  margin: 1.5rem 0 0 2rem;
+}
+
+#name2, #designer2, #inventor2, #illustrator2, #dude2 {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 400ms, visibility 400ms;
+            transition: opacity 400ms, visibility 400ms;
+}
+
+#name:hover + #name2 {
+  display: block;
+  visibility: visible;
+    opacity: 1;
+    animation: fade 1s;
+}
+   
+#designer:hover + #designer2 {
+  display: block;
+  visibility: visible;
+    opacity: 1;
+    animation: fade 1s;
+}
+
+#inventor:hover + #inventor2 {
+  display: block;
+  visibility: visible;
+    opacity: 1;
+    animation: fade 1s;
+}
+
+#illustrator:hover + #illustrator2 {
+  display: block;
+  visibility: visible;
+    opacity: 1;
+    animation: fade 1s;
+}
+
+#dude:hover + #dude2 {
+  display: block;
+  visibility: visible;
+    opacity: 1;
+    animation: fade 1s;
+}
+
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
 /* Text Styles */
 
 p {
   font-size: 1rem;
   line-height: 1.5rem;
   letter-spacing: 0;
+  margin:0;
 }
 
 ul {
@@ -80,9 +153,9 @@ li {
   font-family: 'Space Grotesk', sans-serif;
   font-weight: 400;
   font-size: 4rem;
-  line-height: 1;
+  line-height: 0.9;
   letter-spacing: -0.15rem;
-  margin: 0.3em 0;
+  /*margin: 0.3em 0;*/
 }
 
 .h2 {
@@ -100,7 +173,7 @@ li {
   font-size: 1.5rem;
   line-height: 2rem;
   letter-spacing: -0.05rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
 }
 
 .h6 {
@@ -109,7 +182,7 @@ li {
   text-transform: uppercase;
   letter-spacing: 0.05rem;
   font-weight: 500;
-  margin-bottom: 1.5rem;
+  margin: 1.5rem 0;
 }
 
 .body-large {
@@ -161,7 +234,7 @@ a {
 }
 
 a:hover {
-  text-decoration: underline;
+  /*text-decoration: underline;*/
   color: #0062FF;
  }
 
@@ -171,7 +244,7 @@ a:hover {
 
 .a-active:hover {
   color: #2A384D;
-  text-decoration: underline;
+  /*text-decoration: underline;*/
 }
 
 .a-inactive {
@@ -180,7 +253,7 @@ a:hover {
 
 .a-inactive:hover {
   color: #0062FF;
-  text-decoration: underline;
+  /*text-decoration: underline;*/
 }
 
 .bullets {
@@ -192,12 +265,6 @@ a:hover {
 
 
 /* Style the navbar */
-
-#navbar {
-  width: 100%;
-  overflow: hidden;
-  background-color: transparent;
-}
 
 #logo-sticky {
   position: fixed;
@@ -219,17 +286,21 @@ a:hover {
 
 .extranav li {
 	display: inline-block;
-	margin-left: 1rem;
+	padding: 0 0.5rem;
 }
 
 @media screen and (min-width: 40em) {
 .extranav li {
-	margin-left: 3rem;
+	margin: 0 1rem;
 }
 }
 
 .extranav a {
 	text-align: left;
+}
+
+button:hover {
+  color: #0062FF;;
 }
 
 .dropdown {
@@ -242,7 +313,7 @@ a:hover {
   display: none;
   position: absolute;
   overflow: hidden;
-  top: 2.4rem;
+  top: 2rem;
   background-color: #fff;
   border-radius: 4px;
   min-width: 216px;
@@ -257,10 +328,9 @@ a:hover {
 
 /* Links inside the dropdown */
 .dropdown-content a {
-  color: #2A384D;
-  font-size: 1.5rem;
+  font-size: 1rem;
   line-height: 2rem;
-  padding: .75rem 1rem;
+  padding: .5rem 1rem;
   text-decoration: none;
   display: block;
 }
@@ -278,6 +348,14 @@ a:hover {
   border-radius: 100%;
 }
 */
+
+@media screen and (min-width: 40em) {
+.dropdown-content a {
+    font-size: 1.5rem;
+    padding: .75rem 1rem;
+}
+}
+
 .currentpage {
   border-left: 4px solid #0062FF;
 }
