@@ -3,23 +3,23 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Javier Yep — About</title>
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700;800&display=swap" as="style">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700;800&display=swap">
+    <title>Javier Yep</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Work+Sans:ital,wght@0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
     <link rel="shortcut icon" type="image/png" href="images/favicon.png">
 
     <!-- Primary Meta Tags -->
-    <meta name="title" content="Javier Yep — About">
-    <meta name="description" content="Designer, inventor, illustrator and good dude. Currently at DocuSign as a product designer in Chicago; previously at SAP in San Francisco.">
+    <meta name="title" content="Javier Yep — Product Designer">
+    <meta name="description" content="Product designer, inventor, illustrator and good dude. Currently at DocuSign as a product designer in Chicago; previously at SAP in San Francisco.">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="http://javier-yep.com/">
     <meta property="og:title" content="Javier Yep — Product Designer">
-    <meta property="og:description" content="Designer, inventor, illustrator and good dude. Currently working at DocuSign as a product designer in Chicago; previously at SAP in San Francisco.">
+    <meta property="og:description" content="Product designer, inventor, illustrator and good dude. Currently working at DocuSign as a product designer in Chicago; previously at SAP in San Francisco.">
     <meta property="og:image" content="https://javieryep.github.io/portfolio/images/cover.jpg">
     <meta property="og:image:alt" content="Profile photo with website description">
 
@@ -27,7 +27,7 @@
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="http://javier-yep.com/">
     <meta property="twitter:title" content="Javier Yep — Product Designer">
-    <meta property="twitter:description" content="Designer, inventor, illustrator and good dude. Currently working at DocuSign as a product designer in Chicago; previously at SAP in San Francisco.">
+    <meta property="twitter:description" content="Product designer, inventor, illustrator and good dude. Currently working at DocuSign as a product designer in Chicago; previously at SAP in San Francisco.">
     <meta property="twitter:image" content="https://javieryep.github.io/portfolio/images/cover.jpg">
     <meta property="twitter:image:alt" content="Profile photo with website description">
 
@@ -37,25 +37,35 @@
 <!-- Logo nav -->
 
 <nav id="navbar">
-  <div id="logo-sticky" class="dropdown">
-    <button class="dropbtn" href="index.html"><img width="40px" src="images/favicon.svg" alt="Logo"></button>
-  <div class="dropdown-content">
-    <a href="index.html">Home</a>
-    <div class="currentpage"><a href="about.html">About</a></div>
-    <a href="resume.html">Resume</a>
+  <div id="logo-sticky">
+    <a href="index.html"><img width="48px" src="images/favicon.svg" alt="Logo"></a>
   </div>
 </nav>
 
-<div class="medium-12 columns spacing-xl">
-  <div class="extranav">
-    <!--<a href="index.html"><span class="material-icons">arrow_back</span>Home</a>-->
-  </div>
+<div class="extranav columns spacing-xl">
+  <ul>
+    <li>
+      <div class="dropdown">
+        <button><p>Projects</p></button>
+        <div class="dropdown-content">
+          <a href="gen.html">DocuSign Gen</a>
+          <a href="dabra.html">Dabra.ai</a>
+          <a href="sapcx.html">SAP CX Live</a>
+          <a href="cyclical.html">Cyclical</a>
+          <a href="undflag.html">UND Flag</a>
+          <a href="visuals.html">Visuals</a>
+        </div>
+      </div>
+    </li>
+    <li><p><a href="about.html">About</a></p></li>
+    <li><p><a href="resume.html">Resume</a></p></li>
+  </ul>
 </div>
 
 
 <!-- Main Content-->
 
-<main id="main" class="row">
+<main id="main" class="row limited">
 <div id="content" class="medium-10 medium-push-1 column">
 
 <!-- Nav Desktop -->

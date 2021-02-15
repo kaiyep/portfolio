@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Javier Yep — Resume</title>
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700;800&display=swap" as="style">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700;800&display=swap">
+    <title>Javier Yep</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Work+Sans:ital,wght@0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
@@ -37,19 +37,29 @@
 <!-- Logo nav -->
 
 <nav id="navbar">
-  <div id="logo-sticky" class="dropdown">
-    <button class="dropbtn" href="index.html"><img width="40px" src="images/favicon.svg" alt="Logo"></button>
-  <div class="dropdown-content">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <div class="currentpage"><a href="resume.html">Resume</a></div>
+  <div id="logo-sticky">
+    <a href="index.html"><img width="48px" src="images/favicon.svg" alt="Logo"></a>
   </div>
 </nav>
 
-<div class="medium-12 columns spacing-xl">
-  <div class="extranav">
-    <!--<a href="index.html"><span class="material-icons">arrow_back</span>Home</a>-->
-  </div>
+<div class="extranav columns spacing-xl">
+  <ul>
+    <li>
+      <div class="dropdown">
+        <button><p>Projects</p></button>
+        <div class="dropdown-content">
+          <a href="gen.html">DocuSign Gen</a>
+          <a href="dabra.html">Dabra.ai</a>
+          <a href="sapcx.html">SAP CX Live</a>
+          <a href="cyclical.html">Cyclical</a>
+          <a href="undflag.html">UND Flag</a>
+          <a href="visuals.html">Visuals</a>
+        </div>
+      </div>
+    </li>
+    <li><p><a href="about.html">About</a></p></li>
+    <li><p><a href="resume.html">Resume</a></p></li>
+  </ul>
 </div>
 
 
@@ -84,7 +94,7 @@
 <section>
   <header class="row">
     <div class="small-12 columns">
-      <h1 class="h1 spacing-s">Resume</h1>
+      <h1 class="h1 spacing-m">Resume</h1>
     </div>
   </header>
 </section>

@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Javier Yep — SAP CX Live</title>
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700;800&display=swap" as="style">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700;800&display=swap">
+    <title>Javier Yep</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Work+Sans:ital,wght@0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
@@ -35,20 +35,29 @@
 <!-- Logo nav -->
 
 <nav id="navbar">
-  <div id="logo-sticky" class="dropdown">
-    <button class="dropbtn" href="index.html"><img width="40px" src="images/favicon.svg" alt="Logo"></button>
-  <div class="dropdown-content">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="resume.html">Resume</a>
+  <div id="logo-sticky">
+    <a href="index.html"><img width="48px" src="images/favicon.svg" alt="Logo"></a>
   </div>
 </nav>
 
-<div class="medium-12 columns spacing-xl">
-  <div class="extranav">
-    <!--<p class="small-text hide-for-small-only"><a data-tooltip tabindex="1" data-position="bottom" data-alignment="left" title="Dabra.ai — taking a startup MVP to the next level" href="dabra.html"><span class="material-icons">arrow_back</span>Previous project</a></p>-->
-    <p><a href="dabra.html"><span class="small-text material-icons">arrow_back</span>Previous project</a></p>
-  </div>
+<div class="extranav columns spacing-xl">
+  <ul>
+    <li>
+      <div class="dropdown">
+        <button><p>Projects</p></button>
+        <div class="dropdown-content">
+          <a href="gen.html">DocuSign Gen</a>
+          <a href="dabra.html">Dabra.ai</a>
+          <div class="currentpage"><a href="sapcx.html">SAP CX Live</a></div>
+          <a href="cyclical.html">Cyclical</a>
+          <a href="undflag.html">UND Flag</a>
+          <a href="visuals.html">Visuals</a>
+        </div>
+      </div>
+    </li>
+    <li><p><a href="about.html">About</a></p></li>
+    <li><p><a href="resume.html">Resume</a></p></li>
+  </ul>
 </div>
 
 <!-- Main Content-->
@@ -56,7 +65,7 @@
 <main id="main">
 
   <header class="row column spacing-l">
-  <div class="medium-10 medium-push-1 columns">
+  <div class="medium-12 columns">
     <h1 class="h1 spacing-m"><a class="a-active" href="https://events.sap.com/sap-cx-live/en/home" target="_blank">SAP CX Live</a> — crafting B2B2C prototypes</h1>
   </div>
   </header>
@@ -110,7 +119,7 @@
       
       <div class="row columns spacing-m">
         <div class="medium-8 medium-push-2 columns">
-          <p style="text-transform: uppercase;">1st project</p>
+          <h6 class="h6">1st project</h6>
           <h2 class="h2 spacing-s"><a class="a-active" href="https://thinfilmsystems.com/" target="_blank">Thinfilm</a>—‘tap to’ consumer experience</h2>
           <p class="spacing-m">Thinfilm is a San Jose-based company, whose value proposition is to enhance the customer experience with non-electronic items by adding unique near field communication tags, or <a class="a-active" href="https://www.howtogeek.com/137979/htg-explains-what-is-nfc-and-what-can-i-use-it-for/" target="_blank">NFC tags</a>, providing both the customer and the seller with valuable contextual actionable information. In spite of this, their initial presentation proposal used kitchen appliances, which seemed to downplay the presentation impact. We assumed users would already expect these appliances to have a level of connectivity.</p>
           <figure>
@@ -192,7 +201,7 @@
 
       <div class="row columns spacing-m">
         <div class="medium-8 medium-push-2 columns">
-          <p style="text-transform: uppercase;">2nd project</p>
+          <h6 class="h6">2nd project</h6>
           <h2 class="h2 spacing-s"><a class="a-active" href="https://www.crunchbase.com/organization/brickwork" target="_blank">Brickwork</a>—blending online and in-store retail</h2>
           <p>Brickwork Software is a New-York based company that provides a unified checkout experience to customers purchasing both physical items and in-person experiences offered on the same e-commerce site. Examples of these in-person experiences include NikeLab training session, fitting appointments at Kate Spade, Bonobo’s personal shopping experiences, Bassett’s design consultations, etc.</p>
           <p class="spacing-m">The goal was to showcase the online to in-store user experience, which included not only the customer’s journey, but also the store associate’s journey. Each user type had different needs and use cases.</p>
