@@ -36,7 +36,7 @@
     
 <!-- Top nav -->
 
-<nav class="row spacing-l">  
+<nav class="row spacing-l">
   
   <div id="logo-sticky">
     <a href="index.html"><img width="48px" src="images/favicon.svg" alt="Logo"></a>
@@ -46,7 +46,7 @@
     <ul>
       <li class="hide-for-small-only">
         <div class="dropdown">
-          <span>Projects ↓</span>
+          <div class="menuitem"><span>Projects ↓</span></div>
           <div class="dropdown-content">
             <a href="gen.html">DocuSign Gen</a>
             <a href="dabra.html">Dabra.ai</a>
@@ -57,10 +57,14 @@
           </div>
         </div>
       </li>
-      <li class="hide-for-small-only"><span><a href="about.html">About</a></span></li>
-      <li class="hide-for-small-only"><span><a href="resume.html">Resume</a></span></li>
+      <li class="hide-for-small-only">
+        <div class="menuitem"><span><a href="about.html">About</a></span></div>
+      </li>
+      <li class="hide-for-small-only">
+        <div class="menuitem"><span><a href="resume.html">Resume</a></span></div>
+      </li>
       <li class="show-for-small-only">
-        <div class="dropdown">
+        <div class="dropdown" style="margin: 1rem;">
           <a><img width="48px" src="images/icon_menu.svg" alt="menu"></a>
           <div class="dropdown-content" id="menu2">
             <a href="index.html#projects">Projects</a>
