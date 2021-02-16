@@ -288,25 +288,53 @@ a:hover {
   display: block;
 }
 
-.extranav {
+#menumobile {
+  float: right;
+  width: 100%
+  right:0;
+  top: 0;
+  margin: 16px;
+  z-index: 100;
+  border-radius: 100%;
+}
+
+.topmenu {
   text-align: right;
   padding-top:1.25rem;
 }
 
-.extranav li {
+.topmenu li {
 	display: inline-block;
 	margin-right: 1rem;
 }
 
 @media screen and (min-width: 40em) {
-.extranav li {
+.topmenu li {
 	margin-right: 2rem;
 }
 }
 
-.extranav a {
+.topmenu a {
 	text-align: left;
 }
+
+.topmenu span {
+  padding: 1rem;
+  cursor:pointer;
+}
+
+.topmenu span:hover {
+  color: #0062FF;;
+}
+
+
+#menu2 {
+  min-width:160px !important;
+  margin:0;
+  left: -112px;
+  top:0px;
+}
+
 
 button:hover {
   color: #0062FF;;
@@ -322,7 +350,7 @@ button:hover {
   display: none;
   position: absolute;
   overflow: hidden;
-  top: 2.5rem;
+  top: 3rem;
   background-color: #fff;
   border-radius: 4px;
   min-width: 216px;

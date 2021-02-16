@@ -36,35 +36,42 @@
 
 <!-- Logo nav -->
 
-<nav>
-  <div id="logo-sticky" class="dropdown">
+<nav class="row spacing-l">  
+  
+  <div id="logo-sticky">
     <a href="index.html"><img width="48px" src="images/favicon.svg" alt="Logo"></a>
-  <div class="dropdown-content show-for-small-only">
-    <div class="currentpage"><a class="a-active" href="index.html">Home</a></div>
-    <a href="about.html">About</a>
-    <a href="resume.html">Resume</a>
+  </div>
+
+  <div class="topmenu">
+    <ul>
+      <li class="hide-for-small-only">
+        <div class="dropdown">
+          <span>↓ Projects</span>
+          <div class="dropdown-content">
+            <a href="gen.html">DocuSign Gen</a>
+            <a href="dabra.html">Dabra.ai</a>
+            <a href="sapcx.html">SAP CX Live</a>
+            <a href="cyclical.html">Cyclical</a>
+            <a href="undflag.html">UND Flag</a>
+            <a href="visuals.html">Visuals</a>
+          </div>
+        </div>
+      </li>
+      <li class="hide-for-small-only"><span><a href="about.html">About</a></span></li>
+      <li class="hide-for-small-only"><span><a href="resume.html">Resume</a></span></li>
+      <li class="show-for-small-only">
+        <div class="dropdown">
+          <a><img width="48px" src="images/icon_menu.svg" alt="menu"></a>
+          <div class="dropdown-content" id="menu2">
+            <div class="currentpage"><a class="a-active" href="index.html#projects">Projects</a></div>
+            <a href="about.html">About</a>
+            <a href="resume.html">Resume</a>
+          </div>
+        </div>
+      </li>
+    </ul>
   </div>
 </nav>
-
-<div class="extranav spacing-l">
-  <ul class="hide-for-small-only">
-    <li>
-      <div class="dropdown">
-        <button style="cursor:pointer;">↓ Projects</button>
-        <div class="dropdown-content">
-          <a href="gen.html">DocuSign Gen</a>
-          <a href="dabra.html">Dabra.ai</a>
-          <a href="sapcx.html">SAP CX Live</a>
-          <a href="cyclical.html">Cyclical</a>
-          <a href="undflag.html">UND Flag</a>
-          <a href="visuals.html">Visuals</a>
-        </div>
-      </div>
-    </li>
-    <li><p><a href="about.html">About</a></p></li>
-    <li><p><a href="resume.html">Resume</a></p></li>
-  </ul>
-</div>
 
 
 <!-- Main Content-->
