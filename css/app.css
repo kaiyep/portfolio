@@ -73,7 +73,7 @@ img {
   height: 100%;
   color: #0062FF;
   display: inline-block;
-  padding: 1.75rem 0 1.75rem 1.75rem;
+  padding: 1.75rem;
 }
 
 @media screen and (min-width: 40em) {
@@ -94,48 +94,47 @@ img {
   display: block;
   visibility: visible;
     opacity: 1;
-    animation: fade 1s;
+    animation: moveToRight 0.4s;
 }
    
 #designer:hover + #designer2 {
   display: block;
   visibility: visible;
     opacity: 1;
-    animation: fade 1s;
+    animation: moveToRight 0.4s;
 }
 
 #inventor:hover + #inventor2 {
   display: block;
   visibility: visible;
     opacity: 1;
-    animation: fade 1s;
+    animation: moveToRight 0.4s;
 }
 
 #illustrator:hover + #illustrator2 {
   display: block;
   visibility: visible;
     opacity: 1;
-    animation: fade 1s;
+    animation: moveToRight 0.4s;
 }
 
 #dude:hover + #dude2 {
   display: block;
   visibility: visible;
     opacity: 1;
-    animation: fade 1s;
+    animation: moveToRight 0.4s;
 }
 
-
-@keyframes fade {
-    0% {
+ @keyframes moveToRight {
+     0% {
         opacity: 0;
-    }
-
-    100% {
+        transform: translateX(-1rem);
+      }
+     100% {
         opacity: 1;
+        transform: translateX(0rem);
+      }
     }
-}
-
 
 /* Text Styles */
 
@@ -338,11 +337,6 @@ a:hover {
   top: 3rem;
 }
 
-
-button:hover {
-  color: #0062FF;;
-}
-
 .dropdown {
   position: relative;
   display: inline-block;
@@ -362,9 +356,21 @@ button:hover {
   z-index: 10;
 }
 
+ @keyframes moveDown {
+     0% {
+        opacity: 0;
+        transform: translateY(-1rem);
+      }
+     100% {
+        opacity: 1;
+        transform: translateY(0rem);
+      }
+    }
+
 .sticky.is-stuck {
   position: fixed;
-  z-index: 0; }
+  z-index: 0;
+}
 
 /* Links inside the dropdown */
 .dropdown-content a {
@@ -376,11 +382,14 @@ button:hover {
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #f5f6f7}
+.dropdown-content a:hover {
+  background-color: #f5f6f7;
+}
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
+  animation: moveDown 0.2s;
 }
 /*
 .dropdown:hover {
