@@ -34,14 +34,18 @@
       
 <!-- Logo nav -->
 
-<nav id="navbar">
-  <div id="logo-sticky">
+<nav>
+  <div id="logo-sticky" class="dropdown">
     <a href="index.html"><img width="48px" src="images/favicon.svg" alt="Logo"></a>
+  <div class="dropdown-content show-for-small-only">
+    <div class="currentpage"><a class="a-active" href="index.html">Home</a></div>
+    <a href="about.html">About</a>
+    <a href="resume.html">Resume</a>
   </div>
 </nav>
 
-<div class="extranav columns spacing-xl">
-  <ul>
+<div class="extranav spacing-l">
+  <ul class="hide-for-small-only">
     <li>
       <div class="dropdown">
         <button style="cursor:pointer;">↓ Projects</button>

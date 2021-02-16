@@ -40,14 +40,18 @@
 <main id="main">
 <!-- Logo nav -->
 
-<nav id="navbar">
-  <div id="logo-sticky">
+<nav>
+  <div id="logo-sticky" class="dropdown">
     <a href="index.html"><img width="48px" src="images/favicon.svg" alt="Logo"></a>
+  <div class="dropdown-content show-for-small-only">
+    <div class="currentpage"><a class="a-active" href="index.html">Home</a></div>
+    <a href="about.html">About</a>
+    <a href="resume.html">Resume</a>
   </div>
 </nav>
 
-<div class="extranav spacing-m">
-  <ul>
+<div class="extranav spacing-l">
+  <ul class="hide-for-small-only">
     <li>
       <div class="dropdown">
         <button style="cursor:pointer;">↓ Projects</button>
@@ -66,19 +70,13 @@
   </ul>
 </div>
 
-<div class="columns spacing-xl">
-  <div class="extranav">
-    <a class="show-for-small-only" href="index.html#projects"><span class="material-icons">arrow_back</span>All Projects</a>
-  </div>
-</div>
 
 <!-- Main Content-->
 
 <div class="row columns">
   <div class="medium-8 medium-push-2 columns">
     <header class="row column spacing-m">
-      <h1 class="h2 spacing-m">Page not found</h1>
-        <p class="body-large">Sorry, the page you tried to access does not exist.</p> 
+        <p class="h2">Sorry, the page you tried to access does not exist.</p> 
     </header>
 
     <div class="row up spacing-l">
