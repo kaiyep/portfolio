@@ -463,26 +463,27 @@ a:hover {
 
 #main {
   width: 100%;
-  min-height: calc(100vh - 3rem);
+  min-height: calc(100vh - 9rem);
 }
 
 .footer-container {
-  width:100%;
-  bottom:0;
-  height:3rem;
-  position:relative;
+  height: 100%
 }
 
 .footer {
-  opacity: 0.75;
-  bottom:0;
-  position:relative;
-  vertical-align: bottom;
+  margin-top: 3rem;
+  padding-bottom: 2rem;
 }
 
-.footer p {
-  margin:0px;
-  line-height: 3rem;
+.footer-item-right p, .footer-item-left p {
+  text-align: center;
+}
+
+@media screen and (min-width: 40em) {
+  .footer-item-left p {
+    text-align: left!important;}
+  .footer-item-right p {
+    text-align: right!important;}
 }
 
 
