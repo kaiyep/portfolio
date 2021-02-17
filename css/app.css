@@ -283,21 +283,38 @@ a:hover {
 /* Style the navbar */
 
 #logo-sticky {
-  position: fixed;
-  top: 0;
-  margin: 16px;
+  position:fixed;
+  top:0;
+  width:3.5rem;
+  margin: 1rem 1.75rem;
   z-index: 100;
   border-radius: 100%;
+  background-color: #0062FF;
+  text-align: center;
+}
+
+#logo-sticky a {
+  text-transform: uppercase;
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 3.5rem;
+  color: white;
 }
 
 #logo-sticky:hover {
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.16), 0px 0px 2px rgba(0, 0, 0, 0.16);
+  background-color: #2A384D;
+  cursor: pointer;
+  animation: logoHover 0.2s;
 }
 
-#logo-sticky img {
-  float: right;
-  display: block;
-}
+ @keyframes logoHover {
+     0% {
+        background-color: #0062FF;
+      }
+     100% {
+        background-color: #2A384D;
+      }
+    }
 
 #menumobile {
   float: right;
