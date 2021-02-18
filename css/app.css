@@ -471,7 +471,7 @@ a:hover {
   position: absolute;
   overflow: hidden;
   top: 5rem;
-  background-color: #fff;
+  background-color: #111D29;
   /*border-radius: 4px;*/
   min-width: 216px;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.16), 0px 0px 2px rgba(0, 0, 0, 0.16);
@@ -496,16 +496,18 @@ a:hover {
 
 /* Links inside the dropdown */
 .dropdown-content a {
+  color: white;
+  opacity: 0.5;
   font-size: 1.5rem;
   line-height: 2.5rem;
-  padding: .75rem 1rem;
+  padding: .5rem 1rem;
   text-decoration: none;
   display: block;
 }
 
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
-  background-color: #f5f6f7;
+  opacity:1;
 }
 
 /* Show the dropdown menu on hover */
@@ -521,11 +523,11 @@ a:hover {
 */
 
 .currentpage {
-  border-left: 4px solid #0062FF;
+  border-left: 6px solid #0062FF;
 }
 
 .currentpage a {
-	color: #0062FF;
+	opacity:1;
 }
 
 .home {
@@ -946,131 +948,6 @@ figcaption {
           break-inside: avoid;
   margin-bottom: 1rem;
 }
-
-
-
-
-
-
-
-/*
-
-
-.lightbox-src img {
-  width: 100%;
-  cursor: pointer;
-}
-
-.lightbox {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  display: none;
-  background: white;
-  perspective: 1000;
-  z-index: 5;
-}
-
-.filter {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  opacity: 0.5;
-  background-position: center;
-  background-size: cover;
-}
-
-.lightbox img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotateY(0deg);
-  max-height: 95vh;
-  max-width: calc(95vw - 100px);
-  transition: 0.8s cubic-bezier(0.7, 0, 0.4, 1);
-  transform-style: preserve-3d;
-}
-
-[class^="arrow"] {
-  height: 200px;
-  width: 50px;
-  background: rgba(0, 0, 0, 0.4);
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  cursor: pointer;
-}
-
-[class^="arrow"]:after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(-45deg);
-  width: 15px;
-  height: 15px;
-}
-
-.arrowr {
-  right: 0;
-}
-
-.arrowr:after {
-  border-right: 4px solid white;
-  border-bottom: 4px solid white;
-}
-
-.arrowl {
-  left: 0;
-}
-
-.arrowl:after {
-  border-left: 4px solid white;
-  border-top: 4px solid white;
-}
-
-.close {
-  position: absolute;
-  right: 0;
-  width: 32px;
-  height: 32px;
-  background: white;
-  margin: 24px;
-  cursor: pointer;
-}
-
-.close:after,
-.close:before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 4px;
-  height: 100%;
-  background: #2A384D;
-}
-
-.close:after {
-  transform: translate(-50%, -50%) rotate(-45deg);
-}
-
-.close:before {
-  transform: translate(-50%, -50%) rotate(45deg);
-}
-
-.title {
-  font-size: 20px;
-  color: #000;
-  z-index: 1000;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-*/
-
-
-
 
 
 
