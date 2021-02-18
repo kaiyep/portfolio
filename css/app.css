@@ -331,6 +331,10 @@ a:hover {
   margin:0;
 }
 
+.topmenu ul {
+  padding-right: 1rem;
+}
+
 .topmenu li {
 	display: inline-block;
 }
@@ -340,7 +344,7 @@ a:hover {
 }
 
 .menuitem {
-  padding: 1rem 1rem;
+  padding: 1rem 2rem;
   margin: 0.75rem 0;
   cursor:pointer;
   /*border-bottom: 4px solid white;*/
