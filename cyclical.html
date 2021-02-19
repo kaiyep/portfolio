@@ -86,27 +86,45 @@
 
 <!-- Hero Image -->
 <div>
-  <img class="hero-image spacing-xl" src="images/cover_cyclical.jpg">
+  <img class="hero-image spacing-s" src="images/cover_cyclical.jpg">
 </div>
 
 <div class="row" id="content">
   <div class="medium-12 columns">
 
+<!-- Side nav desktop -->
+  
+<nav class="hide-for-small-only">
+  <div class="medium-2 columns" data-sticky-container>
+    <div class="sticky" data-sticky data-anchor="content">
+      <div class="spacing-l"></div> <!--buffer for nav-desktop-->
+      <ul class="nav-desktop no-bullet">
+        <li><p class="small-text"><a href="#background">Background</a></p></li>
+        <li><p class="small-text"><a href="#idea">The initial idea</a></p></li>
+        <li><p class="small-text"><a href="#prototyping">Scrappy prototyping</a></p></li>
+        <li><p class="small-text"><a href="#improving">Improving the experience</a></p></li>
+        <li><p class="small-text"><a href="#itworks">It works!</a></p></li>
+        <li><p class="small-text"><a href="#patent">Can I patent this?</a></p></li>
+        <li><p class="small-text"><a href="#next">Next steps</a></p></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
 
 <!-- Project -->
 
-<div class="medium-12">
-  
-  <div class="row columns spacing-xl">
-    <div class="medium-8 medium-push-2 columns">
-        <h2 class="h2 spacing-s">Background</h2>
+  <div class="row columns spacing-m">
+    <div class="spacing-l"></div> <!--buffer for nav-desktop-->
+    <div class="medium-8 medium-pull-1 columns" id="background">
+        <h2 class="h3 spacing-s">Background</h2>
         <p>When I was a senior in college, my wife and I had just moved to a tiny apartment and started decorating the space. We wanted a nice and useful calendar, but we couldn’t find any that fit our desires. So I thought I’d take that as a personal design challenge.</p>
     </div>
   </div>
 
   <div class="row columns spacing-xl">
-    <div class="medium-8 medium-push-2 columns">
-      <h2 class="h2 spacing-s">The initial idea</h2>
+    <div class="medium-8 medium-push-3 columns" id="idea">
+      <h2 class="h3 spacing-s">The initial idea</h2>
       <p class="spacing-s">We wanted a reusable calendar because we want to be environmentally friendly, but also because we would be moving again and I didn't want to search for a new calendar next year. The more interesting creative calendars I found were the ones using the same grid and content for all the months. With that in mind I came up with my own version.</p>
       <figure class="spacing-m">
         <img class="spacing-s" src="images/cyclical/ideation.png">
@@ -123,8 +141,8 @@
   </div>
 
     <div class="row columns spacing-xl">
-      <div class="medium-8 medium-push-2 columns">
-        <h2 class="h2 spacing-s">Scrappy prototyping</h2>
+      <div class="medium-8 medium-push-3 columns" id="prototyping">
+        <h2 class="h3 spacing-s">Scrappy prototyping</h2>
         <p class="spacing-m">This time, I started looking for something more practical, not only good-looking. I printed my design on paper and started thinking outside the screen. How can I hide the unnecessary information? I folded the days of the week on the left and right forming a loop, and then I used the same loop concept for the months, but with a different piece of paper.</p>
         <figure class="row columns spacing-m">
           <img class="spacing-s" src="images/cyclical/paper_calendars.jpg">
@@ -141,8 +159,8 @@
     </div>
 
    <div class="row columns spacing-m">
-      <div class="medium-8 medium-push-2 columns">
-        <h2 class="h2 spacing-s">Improving the experience</h2>
+      <div class="medium-8 medium-push-3 columns" id="improving">
+        <h2 class="h3 spacing-s">Improving the experience</h2>
         <p>This concept allowed the calendar to be reused every month and every year, but paper is not a very durable material which went against the very goal the calendar.</p>
         <div class="pullquote">
           <div class="quote">
@@ -195,8 +213,8 @@
     </div>
 
     <div class="row columns spacing-s">
-      <div class="medium-8 medium-push-2 columns">
-        <h2 class="h2 spacing-s">It works!</h2>
+      <div class="medium-8 medium-push-3 columns" id="itworks">
+        <h2 class="h3 spacing-s">It works!</h2>
         <p>When I finished making the calendar I realized I had made something pretty original and useful.</p>
         <ul class="bullets">
         <li>First of all, it’s reusable. That means you don’t need to waste more paper in paper calendars.</li>
@@ -208,7 +226,7 @@
     </div>
 
     <div class="row columns spacing-m">
-      <div class="medium-12 columns">
+      <div class="medium-10 medium-push-2 columns">
         <figure class="spacing-s">
           <img class="spacing-s" src="images/cyclical/components.jpg">
           <figcaption>The 3 calendar components</figcaption>
@@ -221,14 +239,17 @@
     </div>
 
     <div class="row spacing-xl">
-      <div class="video-wrap">
-         <iframe class="video-iframe" style="border-radius: 0px" src="https://www.youtube-nocookie.com/embed/3c816TBxiAk?rel=0&modestbranding=1&showinfo=0&autohide=1&color=white" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+      <div class="medium-9 medium-push-3 columns">
+        <div class="video-wrap">
+           <iframe class="video-iframe" style="border-radius: 0px" src="https://www.youtube-nocookie.com/embed/3c816TBxiAk?rel=0&modestbranding=1&showinfo=0&autohide=1&color=white" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
       </div>
     </div>
 
     <div class="row columns spacing-m">
-      <div class="medium-8 medium-push-2 columns">
-        <h2 class="h2 spacing-s">Can I patent this?</h2>
+      <div class="medium-8 medium-push-3 columns" id="patent">
+        <h2 class="h3 spacing-s">Can I patent this?</h2>
         <p>That’s what I asked myself when I realized the uniqueness of my creation. I didn't know anything about patents, and I was sure I wouldn't be able to afford a lawyer at that point. Before giving up though, I started reading many patents, and then I thought to myself</p>
         <div class="pullquote">
           <div class="quote">
@@ -239,15 +260,8 @@
       </div>
     </div>
 
-    <!--<div class="row columns spacing-m">
-      <div class="medium-8 medium-push-2 columns">
-      <blockquote class="embedly-card" data-card-controls="0"><h4><a href="https://medium.com/@javieryep/patenting-a-side-project-without-a-lawyer-7d57bc71bef4">Patenting a side project without a lawyer | by Javier Yep</a></h4><p>After inventing a product with commercial potential I thought of patenting it, but I didn't have the resources to hire a lawyer. This is how I got it done on my own.</p></blockquote>
-      <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
-      </div>
-    </div>-->
-
     <div class="row columns spacing-xl">
-    <div class="image-hover-wrapper medium-8 medium-push-2 columns spacing-s">
+    <div class="image-hover-wrapper medium-8 medium-push-3 columns spacing-s">
       <a href="https://patents.google.com/patent/US10460629B1/" target="_blank"><img src="images/cyclical/patent.png" alt="Patent document">
         <div class="image-hover-wrapper-reveal">
         <p class="body-large"><span class="material-icons" style="font-size: 1.25rem">call_made</span> View patent document</p>
@@ -256,22 +270,24 @@
     </div>
     </div>
 
-    <div class="row pullout">
-      <div class="pullout-content medium-8 medium-push-2 small-10 small-push-1 columns">
-        <p style="text-transform: uppercase;">Results</p>
-        <p class="h2">An innovative physical perpetual calendar, patented without a lawyer.</p>
+    <div class="row spacing-xl">
+      <div class="medium-8 medium-push-3 columns">
+        <div class="medium-12 columns">
+          <p class="h6">Results</p>
+          <p class="h2">An innovative physical perpetual calendar, patented without a lawyer.</p>
+        </div>
       </div>
     </div>
 
     <div class="row columns spacing-xl">
-      <div class="medium-8 medium-push-2 columns">
-          <h2 class="h2 spacing-s">Next steps</h2>
+      <div class="medium-8 medium-push-3 columns" id="next">
+          <h2 class="h3 spacing-s">Next steps</h2>
           <p>One of these days, you’ll be able to order this calendar online. For now, I’m still figuring out how to manufacture it at scale. I’ll probably start my own Kickstarter campaign! If you have an idea or someone who might be able to help me, let me know!</p>
       </div>
     </div>
 
     <nav class="row columns spacing-xl">
-      <div class="row medium-8 medium-push-2 columns up">
+      <div class="row medium-8 medium-push-3 columns up">
         <div class="small-8 medium-9 columns text-left">
           <a class="h3 a-active hide-for-small-only" data-tooltip tabindex="2" data-position="bottom" data-alignment="left" title="Unity in Diversity Flag — rallying for unity in divisive times" href="undflag.html">Next project</a>
           <a class="h3 a-active show-for-small-only" href="undflag.html">Next project</a>

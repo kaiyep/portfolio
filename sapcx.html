@@ -86,247 +86,267 @@
 
 <!-- Hero Image -->
 <div>
-  <img class="hero-image spacing-xl" src="images/cover_sapcx.jpg">
+  <img class="hero-image spacing-s" src="images/cover_sapcx.jpg" alt="SAP CX Live cover image">
 </div>
 
 <div class="row" id="content">
-  <div class="medium-12">
+  <div class="medium-12 columns">
 
-    <!-- Project -->
+<!-- Side nav desktop -->
+    
+  <nav class="hide-for-small-only">
+    <div class="medium-2 columns" data-sticky-container>
+      <div class="sticky" data-sticky data-anchor="content">
+        <div class="spacing-l"></div> <!--buffer for nav-desktop-->
+        <ul class="nav-desktop no-bullet">
+          <li><p class="small-text"><a href="#role">Role</a></p></li>
+          <li><p class="small-text"><a href="#whatis">What is SAP CX Live?</a></p></li>
+          <li><p class="small-text"><a href="#goal">Project goal</a></p></li>
+          <li><p class="small-text"><a href="#thinfilm">1st: Thinfilm</a></p></li>
+          <li><p class="small-text"><a href="#presentation1">Presentation 1</a></p></li>
+          <li><p class="small-text"><a href="#brickwork">2nd: Brickwork</a></p></li>
+          <li><p class="small-text"><a href="#presentation2">Presentation 2</a></p></li>
+          <li><p class="small-text"><a href="#results">Results</a></p></li>
+          <li><p class="small-text"><a href="#learnings">Some key learnings</a></p></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-    <div class="columns">
-      
-      <div class="row columns spacing-xl">
-        <div class="medium-8 medium-push-2 columns">
-            <h2 class="h2 spacing-s">Role</h2>
-            <ul class="bullets">
-              <li>Product design; presentation and exhibition design</li>
-              <li>Based in Palo Alto, California, working remotely with the <a class="a-active" href="https://cxlabs.sap.com/" target="_blank">SAP Customer Experience Labs</a>, an innovation team based in Waldorf, Germany</li>
-              <li>Fellowship duration: 3 months</li>
-            </ul>
+  <!-- Project -->
+
+    <div class="row columns spacing-m">
+    <div class="spacing-l"></div> <!--buffer for nav-desktop-->
+      <div class="medium-8 medium-pull-1 columns" id="role">
+        <h3 class="h3 spacing-s">Role</h3>
+        <ul class="bullets">
+          <li>Product design; presentation and exhibition design</li>
+          <li>Based in Palo Alto, California, working remotely with the <a class="a-active" href="https://cxlabs.sap.com/" target="_blank">SAP Customer Experience Labs</a>, an innovation team based in Waldorf, Germany</li>
+          <li>Fellowship duration: 3 months</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row columns spacing-xl">
+      <div class="medium-8 medium-push-3 columns" id="whatis">
+        <h3 class="h3 spacing-s">What is <a class="a-active" href="https://events.sap.com/sap-cx-live/en/home" target="_blank">SAP CX Live</a>?</h3>
+        <p>It is SAP’s annual customer experience conference, which takes place in Orlando, Florida. Thousands of SAP customers attend the conference to learn about current and future technologies that will improve customer experience. It is the main stage to showcase B2B2C ideas, future partnerships and exciting new products.</p>
+        <div class="video-wrap">
+          <iframe class="video-iframe" src="https://www.youtube.com/embed/294Z6DXYJJc" scrolling="no" frameborder="0" allowfullscreen="true"></iframe>
         </div>
       </div>
+    </div>
 
-      <div class="row columns spacing-xl">
-        <div class="medium-8 medium-push-2 columns">
-          <h2 class="h2 spacing-s">What is <a class="a-active" href="https://events.sap.com/sap-cx-live/en/home" target="_blank">SAP CX Live</a>?</h2>
-          <p>It is SAP’s annual customer experience conference, which takes place in Orlando, Florida. Thousands of SAP customers attend the conference to learn about current and future technologies that will improve customer experience. It is the main stage to showcase B2B2C ideas, future partnerships and exciting new products.</p>
+    <div class="row columns spacing-xl">
+      <div class="medium-8 medium-push-3 columns" id="goal">
+        <h3 class="h3 spacing-s">Project goal</h3>
+        <p>One of the highlights for the conference was the SAP Cloud Platform Extension Factory, also known as <a class="a-active" href="https://kyma-project.io/" target="_blank">Kyma</a>, which allows to extend applications with serverless functions and microservices. Kyma enables startups to integrate their systems with the larger SAP ecosystem much more easily. In order to showcase Kyma, the goal of my 3-month fellowship with SAP CX Labs was</p>
+        <div class="pullquote">
+          <div class="quote">
+            <p class="body-large">to create prototypes demonstrating startup products integrated with the SAP Cloud Platform.</p>
+          </div>
+        </div>
+        <p>I worked with 2 startups in their product presentations—Thinfilm and Brickwork Software—under the guidance of <a class="a-active" href="https://www.linkedin.com/in/davidbrockington" target="_blank">David Brockington</a>, the Head of Innovation Ecosystem at SAP CX Labs.</p>
+      </div>
+    </div>
+    
+    <div class="row columns spacing-m">
+      <div class="medium-8 medium-push-3 columns" id="thinfilm">
+        <h6 class="h6">1st project</h6>
+        <h3 class="h3 spacing-s"><a class="a-active" href="https://thinfilmsystems.com/" target="_blank">Thinfilm</a>—‘tap to’ consumer experience</h3>
+        <p class="spacing-m">Thinfilm is a San Jose-based company, whose value proposition is to enhance the customer experience with non-electronic items by adding unique near field communication tags, or <a class="a-active" href="https://www.howtogeek.com/137979/htg-explains-what-is-nfc-and-what-can-i-use-it-for/" target="_blank">NFC tags</a>, providing both the customer and the seller with valuable contextual actionable information. In spite of this, their initial presentation proposal used kitchen appliances, which seemed to downplay the presentation impact. We assumed users would already expect these appliances to have a level of connectivity.</p>
+        <figure>
+          <img class="spacing-s" src="images/sapcx/TFproposal.png" alt="Thinfil's proposed mockups">
+          <figcaption class="spacing-m">Initial screens provided by Thinfilm</figcaption>
+        </figure>
+        <p>To give Thinfilm’s presentation the surprise effect we wanted, we brainstormed items that would replace these appliances by fulfilling some requirements:</p>
+        <ol class="bullets">
+          <li>does not have any electronic parts and internet connectivity,</li>
+          <li>consumers are emotionally related to, and</li>
+          <li>is of everyday use.</li>
+        </ol>
+        <p class="spacing-s">After a series of ideas, we came up with a fictional protein powder brand called MuscleUp, around which we tailored the narrative.</p>
+        <img class="spacing-s" src="images/sapcx/jars.png" alt="MuscleUp jars">
+        <p class="spacing-m">We defined the user journey based on current and future-facing capabilities of Thinfilm’s NFC technology. The whole experience would happen on a mobile device, and the prototype would account for multiple use cases.</p>
+        <div class="spacing-m">
+          <table>
+            <thead>
+              <tr>
+                <th width="20%">Scenario</th>
+                <th width="50%">Customer needs</th>
+                <th>Proposed solution</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>In-store product search</td>
+                <td>The customer is considering buying the product and needs to receive accurate product information.</td>
+                <td>Marketing content (videos, reviews, testimonials, etc.)</td>
+              </tr>
+              <tr>
+                <td>Purchase consideration</td>
+                <td>The customer needs to know how this product compares to other product options.</td>
+                <td>Product comparison table, populated by tapping products</td>
+              </tr>
+              <tr>
+                <td>At-home product usage</td>
+                <td>The customer needs contextual information on how to use the product.</td>
+                <td>Geolocation, account creation, marketing content</td>
+              </tr>
+              <tr>
+                <td>Product is about to expire</td>
+                <td>The user needs to be notified on time and have the option to reorder the product.</td>
+                <td>Notifications, in-app ecommerce</td>
+              </tr>
+              <tr>
+                <td>Wrong shipment</td>
+                <td>The user received the wrong item and needs to access customer support and personalized assistance.</td>
+                <td>In-app live chat</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="spacing-m">With a redefined storyline and use cases in place, I proceeded to create the prototype wireframes, which later evolved into the high fidelity screens.</p>
+      </div>
+    </div>
+
+    <div class="row columns spacing-m">
+      <div class="medium-9 medium-push-3 columns">
+        <img src="images/sapcx/TFwireframes.png" alt="Initial wireframes">
+        <figcaption class="spacing-m">Initial prototype wireframes</figcaption>
+        <img src="images/sapcx/TFhifi.png" alt="High fidelity screens">
+        <figcaption class="spacing-m">High fidelity screens for Thinfilm</figcaption>
+      </div>
+    </div>
+
+    <div class="row columns spacing-xl">
+      <div class="medium-8 medium-push-3 columns" id="presentation1">
+        <p class="body-large">Presentation</p>
+        <p class="spacing-m">David Brockington presented this product demo by using physical protein powder jars on stage to demonstrate the product vision. This video is a recreation of the on-stage presentation. Since then, Thinfilm has changed its value proposition to high-capacity and ultra-thin lithium batteries.</p>
+        <div class="video-container">
+          <video class="video drop-shadow" poster="images/sapcx/TF_prototype_thumb.jpg" style="border-radius: 4px" controls>
+            <source src="images/sapcx/TF_prototype.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </div>
+
+    <div class="row columns spacing-m">
+      <div class="medium-8 medium-push-3 columns" id="brickwork">
+        <h6 class="h6">2nd project</h6>
+        <h3 class="h3 spacing-s"><a class="a-active" href="https://www.crunchbase.com/organization/brickwork" target="_blank">Brickwork</a>—blending online and in-store retail</h3>
+        <p>Brickwork Software is a New-York based company that provides a unified checkout experience to customers purchasing both physical items and in-person experiences offered on the same e-commerce site. Examples of these in-person experiences include NikeLab training session, fitting appointments at Kate Spade, Bonobo’s personal shopping experiences, Bassett’s design consultations, etc.</p>
+        <p class="spacing-m">The goal was to showcase the online to in-store user experience, which included not only the customer’s journey, but also the store associate’s journey. Each user type had different needs and use cases.</p>
+        <div>
+          <p class="body-large">The store associate's journey</p>
+          <p class="spacing-m">It takes place in the store, on a tablet device. There are three main scenarios taken into account in the prototype design, and they related to the encounter with the customer.</p>
+          <div class="spacing-m">
+            <table>
+              <thead>
+                <tr>
+                  <th width="20%">Scenario</th>
+                  <th width="50%">Store associate's needs</th>
+                  <th>Proposed solution</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Appointment booked by customer</td>
+                  <td>The store associate needs to review appointment information (location, date and time)</td>
+                  <td>Appointment booking system</td>
+                </tr>
+                <tr>
+                  <td>Before the appointment</td>
+                  <td>The store associate needs to learn the customer’s profile and preferences</td>
+                  <td>Account information review</td>
+                </tr>
+                <tr>
+                  <td>During in-store appointment</td>
+                  <td>The store associate needs to order an item not in stock to be shipped directly to the customer’s address</td>
+                  <td>In-store online purchase</td>
+              </tbody>
+            </table>
+          </div>
+          <p>The storyline was modified by the higher executives and the innovation team and, unfortunately, the store associate's journey was dropped from the final presentation. It was replaced by another onerelated to a 3D printing company, which was later tied to the Brickwork storyline and explained the B2B2C value proposition much better.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row columns spacing-m">
+      <div class="medium-9 medium-push-3 columns">
+        <img src="images/sapcx/BWsketch.jpg" alt="Sketches for the store associate experience">
+        <figcaption class="spacing-m">Sketches for the store associate experience</figcaption>
+        <img src="images/sapcx/BWassociate.png" alt="High fidelity screens">
+        <figcaption class="spacing-m">High fidelity screens for the associate experience</figcaption>
+      </div>
+    </div>
+
+    <div class="row columns spacing-m">
+      <div class="medium-8 medium-push-3 columns">
+        <div class="spacing-s">
+          <p class="body-large">The shopper's journey</p>
+          <p class="spacing-m">It starts at home, while the shopper is searching online for new items and experiences on a mobile device. It continues at the store, during the training appointment. For the final storyline iteration, we had Eugenio Cassiano as the customer, who is buying a pair of shoes in his mobile phone. He also books an appointment with a running coach through the same experience.</p>
+          <table>
+            <thead>
+              <tr>
+                <th width="20%">Scenario</th>
+                <th width="50%">Customer needs</th>
+                <th>Proposed solution</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Online product search</td>
+                <td>The customer needs to find products and order them online</td>
+                <td>Ecommerce capabilities</td>
+              </tr>
+              <tr>
+                <td>Online appointment setting</td>
+                <td>The customer needs to find in-store experiences and book an appointment</td>
+                <td>Event selection (date, time, location) and associate selection</td>
+              </tr>
+              <tr>
+                <td>Appointment preparation</td>
+                <td>The customer needs to communicate their profile and preferences (size, style, favorite colors, etc.)</td>
+                <td>Account creation and profile customization.</td>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="row columns spacing-m">
+      <div class="medium-9 medium-push-3 columns">
+        <img src="images/sapcx/BWwireframes.jpg" alt="Sketches for the shopper experience">
+        <figcaption class="spacing-m">Sketches for the shopper experience</figcaption>
+        <img src="images/sapcx/BWhifi.png" alt="High fidelity screens for the shopper experience">
+        <figcaption class="spacing-m">High fidelity screens for the shopper experience</figcaption>
+      </div>
+    </div>
+
+    <div class="row columns spacing-l">
+      <div class="medium-8 medium-push-3 columns"  id="presentation2">
+        <p class="body-large">On-stage presentation</p>
+        <p class="spacing-m">Presented by the Chief Innovation Officer of SAP Customer Experience <a class="a-active" href="https://www.linkedin.com/in/eugeniocassiano/?originalSubdomain=ch" target="_blank">Eugenio Cassiano</a> and Brickwork’s founder and CEO <a class="a-active" href="https://www.linkedin.com/in/davidmunczinski/" target="_blank">David Munczinski</a>. After this presentation, Brickwork Software was acquired by b8ta, a San Francisco-based retail company.</p>
+        <div class="spacing-m">
           <div class="video-wrap">
-            <iframe class="video-iframe" src="https://www.youtube.com/embed/294Z6DXYJJc" scrolling="no" frameborder="0" allowfullscreen="true"></iframe>
+            <iframe class="video-iframe" src="https://events.sap.com/sap-cx-live/en/embed.aspx?sid=42553" scrolling="no" frameborder="0" allowfullscreen="true"></iframe>
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="row columns spacing-xl">
-        <div class="medium-8 medium-push-2 columns">
-            <h2 class="h2 spacing-s">Project goal</h2>
-            <p>One of the highlights for the conference was the SAP Cloud Platform Extension Factory, also known as <a class="a-active" href="https://kyma-project.io/" target="_blank">Kyma</a>, which allows to extend applications with serverless functions and microservices. Kyma enables startups to integrate their systems with the larger SAP ecosystem much more easily. In order to showcase Kyma, the goal of my 3-month fellowship with SAP CX Labs was</p>
-            <div class="pullquote">
-              <div class="quote">
-                <p class="body-large">to create prototypes demonstrating startup products integrated with the SAP Cloud Platform.</p>
-              </div>
-            </div>
-            <p>I worked with 2 startups in their product presentations—Thinfilm and Brickwork Software—under the guidance of <a class="a-active" href="https://www.linkedin.com/in/davidbrockington" target="_blank">David Brockington</a>, the Head of Innovation Ecosystem at SAP CX Labs.</p>
-        </div>
-      </div>
-      
-      <div class="row columns spacing-m">
-        <div class="medium-8 medium-push-2 columns">
-          <h6 class="h6">1st project</h6>
-          <h2 class="h2 spacing-s"><a class="a-active" href="https://thinfilmsystems.com/" target="_blank">Thinfilm</a>—‘tap to’ consumer experience</h2>
-          <p class="spacing-m">Thinfilm is a San Jose-based company, whose value proposition is to enhance the customer experience with non-electronic items by adding unique near field communication tags, or <a class="a-active" href="https://www.howtogeek.com/137979/htg-explains-what-is-nfc-and-what-can-i-use-it-for/" target="_blank">NFC tags</a>, providing both the customer and the seller with valuable contextual actionable information. In spite of this, their initial presentation proposal used kitchen appliances, which seemed to downplay the presentation impact. We assumed users would already expect these appliances to have a level of connectivity.</p>
-          <figure>
-            <img class="spacing-s" src="images/sapcx/TFproposal.png" alt="Thinfil's proposed mockups">
-            <figcaption class="spacing-m">Initial screens provided by Thinfilm</figcaption>
-          </figure>
-          <p>To give Thinfilm’s presentation the surprise effect we wanted, we brainstormed items that would replace these appliances by fulfilling some requirements:</p>
-          <ol class="bullets">
-            <li>does not have any electronic parts and internet connectivity,</li>
-            <li>consumers are emotionally related to, and</li>
-            <li>is of everyday use.</li>
-          </ol>
-          <p class="spacing-s">After a series of ideas, we came up with a fictional protein powder brand called MuscleUp, around which we tailored the narrative.</p>
-          <img class="spacing-s" src="images/sapcx/jars.png" alt="MuscleUp jars">
-          <p class="spacing-m">We defined the user journey based on current and future-facing capabilities of Thinfilm’s NFC technology. The whole experience would happen on a mobile device, and the prototype would account for multiple use cases.</p>
-          <div class="spacing-m">
-            <table>
-              <thead>
-                <tr>
-                  <th width="20%">Scenario</th>
-                  <th width="50%">Customer needs</th>
-                  <th>Proposed solution</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>In-store product search</td>
-                  <td>The customer is considering buying the product and needs to receive accurate product information.</td>
-                  <td>Marketing content (videos, reviews, testimonials, etc.)</td>
-                </tr>
-                <tr>
-                  <td>Purchase consideration</td>
-                  <td>The customer needs to know how this product compares to other product options.</td>
-                  <td>Product comparison table, populated by tapping products</td>
-                </tr>
-                <tr>
-                  <td>At-home product usage</td>
-                  <td>The customer needs contextual information on how to use the product.</td>
-                  <td>Geolocation, account creation, marketing content</td>
-                </tr>
-                <tr>
-                  <td>Product is about to expire</td>
-                  <td>The user needs to be notified on time and have the option to reorder the product.</td>
-                  <td>Notifications, in-app ecommerce</td>
-                </tr>
-                <tr>
-                  <td>Wrong shipment</td>
-                  <td>The user received the wrong item and needs to access customer support and personalized assistance.</td>
-                  <td>In-app live chat</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <p class="spacing-m">With a redefined storyline and use cases in place, I proceeded to create the prototype wireframes, which later evolved into the high fidelity screens.</p>
-        </div>
-      </div>
-
-      <div class="row columns spacing-m">
-        <div class="medium-12 columns">
-          <img src="images/sapcx/TFwireframes.png" alt="Initial wireframes">
-          <figcaption class="spacing-m">Initial prototype wireframes</figcaption>
-          <img src="images/sapcx/TFhifi.png" alt="High fidelity screens">
-          <figcaption class="spacing-m">High fidelity screens for Thinfilm</figcaption>
-        </div>
-      </div>
-
-      <div class="row columns spacing-xl">
-        <div class="medium-8 medium-push-2 columns">
-          <p class="h3">Presentation</p>
-          <p class="spacing-m">David Brockington presented this product demo by using physical protein powder jars on stage to demonstrate the product vision. This video is a recreation of the on-stage presentation. Since then, Thinfilm has changed its value proposition to high-capacity and ultra-thin lithium batteries.</p>
-          <div class="video-container">
-            <video class="video drop-shadow" poster="images/sapcx/TF_prototype_thumb.jpg" style="border-radius: 4px" controls>
-              <source src="images/sapcx/TF_prototype.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-          </div>
-        </div>
-      </div>
-
-      <div class="row columns spacing-m">
-        <div class="medium-8 medium-push-2 columns">
-          <h6 class="h6">2nd project</h6>
-          <h2 class="h2 spacing-s"><a class="a-active" href="https://www.crunchbase.com/organization/brickwork" target="_blank">Brickwork</a>—blending online and in-store retail</h2>
-          <p>Brickwork Software is a New-York based company that provides a unified checkout experience to customers purchasing both physical items and in-person experiences offered on the same e-commerce site. Examples of these in-person experiences include NikeLab training session, fitting appointments at Kate Spade, Bonobo’s personal shopping experiences, Bassett’s design consultations, etc.</p>
-          <p class="spacing-m">The goal was to showcase the online to in-store user experience, which included not only the customer’s journey, but also the store associate’s journey. Each user type had different needs and use cases.</p>
-          <div>
-            <p class="h3">The store associate's journey</p>
-            <p class="spacing-m">It takes place in the store, on a tablet device. There are three main scenarios taken into account in the prototype design, and they related to the encounter with the customer.</p>
-            <div class="spacing-m">
-              <table>
-                <thead>
-                  <tr>
-                    <th width="20%">Scenario</th>
-                    <th width="50%">Store associate's needs</th>
-                    <th>Proposed solution</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Appointment booked by customer</td>
-                    <td>The store associate needs to review appointment information (location, date and time)</td>
-                    <td>Appointment booking system</td>
-                  </tr>
-                  <tr>
-                    <td>Before the appointment</td>
-                    <td>The store associate needs to learn the customer’s profile and preferences</td>
-                    <td>Account information review</td>
-                  </tr>
-                  <tr>
-                    <td>During in-store appointment</td>
-                    <td>The store associate needs to order an item not in stock to be shipped directly to the customer’s address</td>
-                    <td>In-store online purchase</td>
-                </tbody>
-              </table>
-            </div>
-            <p>The storyline was modified by the higher executives and the innovation team and, unfortunately, the store associate's journey was dropped from the final presentation. It was replaced by another onerelated to a 3D printing company, which was later tied to the Brickwork storyline and explained the B2B2C value proposition much better.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="row columns spacing-m">
-        <div class="medium-12 columns">
-          <img src="images/sapcx/BWsketch.jpg" alt="Sketches for the store associate experience">
-          <figcaption class="spacing-m">Sketches for the store associate experience</figcaption>
-          <img src="images/sapcx/BWassociate.png" alt="High fidelity screens">
-          <figcaption class="spacing-m">High fidelity screens for the associate experience</figcaption>
-        </div>
-      </div>
-
-      <div class="row columns spacing-m">
-        <div class="medium-8 medium-push-2 columns">
-          <div class="spacing-s">
-            <p class="h3">The shopper's journey</p>
-            <p class="spacing-m">It starts at home, while the shopper is searching online for new items and experiences on a mobile device. It continues at the store, during the training appointment. For the final storyline iteration, we had Eugenio Cassiano as the customer, who is buying a pair of shoes in his mobile phone. He also books an appointment with a running coach through the same experience.</p>
-            <table>
-              <thead>
-                <tr>
-                  <th width="20%">Scenario</th>
-                  <th width="50%">Customer needs</th>
-                  <th>Proposed solution</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Online product search</td>
-                  <td>The customer needs to find products and order them online</td>
-                  <td>Ecommerce capabilities</td>
-                </tr>
-                <tr>
-                  <td>Online appointment setting</td>
-                  <td>The customer needs to find in-store experiences and book an appointment</td>
-                  <td>Event selection (date, time, location) and associate selection</td>
-                </tr>
-                <tr>
-                  <td>Appointment preparation</td>
-                  <td>The customer needs to communicate their profile and preferences (size, style, favorite colors, etc.)</td>
-                  <td>Account creation and profile customization.</td>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-
-      <div class="row columns spacing-m">
-        <div class="medium-12 columns">
-          <img src="images/sapcx/BWwireframes.jpg" alt="Sketches for the shopper experience">
-          <figcaption class="spacing-m">Sketches for the shopper experience</figcaption>
-          <img src="images/sapcx/BWhifi.png" alt="High fidelity screens for the shopper experience">
-          <figcaption class="spacing-m">High fidelity screens for the shopper experience</figcaption>
-        </div>
-      </div>
-
-      <div class="row columns spacing-xl">
-        <div class="medium-8 medium-push-2 columns">
-          <p class="h3">On-stage presentation</p>
-          <p class="spacing-m">Presented by the Chief Innovation Officer of SAP Customer Experience <a class="a-active" href="https://www.linkedin.com/in/eugeniocassiano/?originalSubdomain=ch" target="_blank">Eugenio Cassiano</a> and Brickwork’s founder and CEO <a class="a-active" href="https://www.linkedin.com/in/davidmunczinski/" target="_blank">David Munczinski</a>. After this presentation, Brickwork Software was acquired by b8ta, a San Francisco-based retail company.</p>
-          <div class="spacing-m">
-            <div class="video-wrap">
-              <iframe class="video-iframe" src="https://events.sap.com/sap-cx-live/en/embed.aspx?sid=42553" scrolling="no" frameborder="0" allowfullscreen="true"></iframe>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    <div class="row pullout">
-      <div class="pullout-content medium-8 medium-push-2 small-10 small-push-1 columns">
-        <p style="text-transform: uppercase;">Results</p>
+    <div class="row spacing-l">
+      <div class="medium-8 medium-push-3 columns" id="results">
+        <p class="h6">Results</p>
         <p class="h2">Exposure to 4000+ SAP customers during the 3-day conference</p>
       </div>
     </div>
 
     <div class="row columns spacing-l">
-      <div class="medium-8 medium-push-2 columns">
-        <h2 class="h2 spacing-s">Some key learnings</h2>
+      <div class="medium-8 medium-push-3 columns" id="learnings">
+        <h3 class="h3 spacing-s">Some key learnings</h3>
           <ul class="bullets">
           <li>Flexibility and focus: this project required a lot of flexibility to the requirement changes and focus to maintain the value proposition clear.</li>
           <li>Keeping multiple user types in mind: the presentation targeted 2 types of users with differnet experiences, actual prototype users (on their phones), and the conference participants (on the large stage screen).</li>
@@ -336,23 +356,22 @@
       </div>
     </div>
 
-
-      <nav class="row columns spacing-xl">
-      <div class="medium-8 medium-push-2 up">
-        <div class="small-8 medium-9 columns text-left">
-          <a class="h3 a-active hide-for-small-only" data-tooltip tabindex="1" data-position="bottom" data-alignment="left" title="Cyclical — inventing and patenting a product" href="cyclical.html">Next project</a>
-          <a class="h3 a-active show-for-small-only" href="cyclical.html">Next project</a>
-        </div>
-        <div class="small-4 medium-3 columns text-right">
-          <a class="h3" href="#">&uarr;  Up</a>
-        </div>
+    <nav class="row columns spacing-xl">
+    <div class="medium-8 medium-push-3 up">
+      <div class="small-8 medium-9 columns text-left">
+        <a class="h3 a-active hide-for-small-only" data-tooltip tabindex="1" data-position="bottom" data-alignment="left" title="Cyclical — inventing and patenting a product" href="cyclical.html">Next project</a>
+        <a class="h3 a-active show-for-small-only" href="cyclical.html">Next project</a>
       </div>
-      </nav>
-
-
+      <div class="small-4 medium-3 columns text-right">
+        <a class="h3" href="#">&uarr;  Up</a>
       </div>
     </div>
-    </main>
+    </nav>
+
+
+    </div>
+  </div>
+</main>
 
 <!--Footer-->
 
