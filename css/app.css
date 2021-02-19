@@ -248,13 +248,23 @@ li {
   letter-spacing: 0;
 }
 
-.h1 {
+.huge {
   /*font-family: 'Work Sans', sans-serif;*/
   font-family: 'Space Grotesk', sans-serif;
   font-weight: 400;
   font-size: 4rem;
   line-height: 0.9;
   letter-spacing: -0.15rem;
+  /*margin: 0.3em 0;*/
+}
+
+.h1 {
+  /*font-family: 'Work Sans', sans-serif;*/
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 1;
+  letter-spacing: -0.1rem;
   /*margin: 0.3em 0;*/
 }
 
@@ -307,10 +317,15 @@ li {
     font-size: 1.5rem;
     line-height: 2.25rem;
     letter-spacing: 0;}
-  .h1 {
+  .huge {
     font-size: 8rem;
     line-height: 0.9;
     letter-spacing: -0.3rem;
+    margin:0;}
+  .h1 {
+    font-size: 6rem;
+    line-height: 1;
+    letter-spacing: -0.2rem;
     margin:0;}
   .h2 {
     font-size: 4rem;
@@ -666,6 +681,7 @@ a:hover {
 }
 
 .nav-desktop {
+  padding-right: 3rem;
   z-index: 0;
 }
 
