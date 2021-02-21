@@ -392,7 +392,8 @@ a:hover {
 #logo-sticky {
   position:fixed;
   top:0;
-  width:3.5rem;
+  width:2.75rem;
+  height: 2.75rem;
   margin: 1rem;
   z-index: 15;
   border-radius: 100%;
@@ -400,16 +401,11 @@ a:hover {
   text-align: center;
 }
 
-@media screen and (min-width: 40em) {
-#logo-sticky {
-  margin-left: 1.75rem;}
-}
-
 #logo-sticky span {
   text-transform: uppercase;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   font-weight: 700;
-  line-height: 3.5rem;
+  line-height: 2.75rem;
   color: white;
 }
 
@@ -417,6 +413,18 @@ a:hover {
   background-color: #2A384D;
   cursor: pointer;
   animation: logoHover 0.2s;
+}
+
+
+@media screen and (min-width: 40em) {
+#logo-sticky {
+  margin-left: 1.75rem;
+  width:3.5rem;
+  height: 3.5rem;}
+
+#logo-sticky span {
+  font-size: 1.75rem;
+  line-height: 3.5rem;}
 }
 
  @keyframes logoHover {
