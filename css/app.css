@@ -101,7 +101,7 @@ body {
     color:#2A384D;
     height: 100%;
     font-size: 16px;
-    max-width: 1440px;
+    max-width: 1536px;
     margin: auto;
 }
 
@@ -586,9 +586,6 @@ a:hover {
   .tooltip::before {
     border-color: transparent transparent #111D29;}
 
-.bottom-links {
-  padding: 0rem 0rem 4rem 0rem;
-}
 
 @media screen and (min-width: 40em) {
 .p-description {
