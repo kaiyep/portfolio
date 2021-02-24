@@ -1014,7 +1014,7 @@ figcaption {
   right: 2rem;
   font-size: 2.5rem;
   font-weight: bold;
-  z-index: 10;
+  z-index: 50;
 }
 
 .close:hover,
