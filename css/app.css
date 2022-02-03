@@ -182,6 +182,26 @@ img {
             transition: opacity 400ms, visibility 400ms;
 }
 
+#name:hover{
+  transition: 0.2s; 
+}
+
+#designer:hover{
+  transition: 0.2s; 
+}
+
+#inventor:hover{
+  transition: 0.2s; 
+}
+
+#illustrator:hover{
+  transition: 0.2s; 
+}
+
+#dude:hover{
+  transition: 0.2s; 
+}
+
 #name:hover + #name2 {
   display: block;
   visibility: visible;
@@ -220,7 +240,7 @@ img {
  @keyframes moveToRight {
      0% {
         opacity: 0;
-        transform: translateX(-1rem);
+        transform: translateX(-0.75rem);
       }
      100% {
         opacity: 1;
