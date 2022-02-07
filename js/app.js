@@ -94,3 +94,4 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active-img";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
+
