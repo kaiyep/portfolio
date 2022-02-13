@@ -96,161 +96,56 @@ html {
        url('../fonts/space-grotesk-v3-latin-ext-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
+/*Variables - Colors*/
+
+:root {
+  --dark-color: #263140;
+  --darker-color:  #111D29;
+  --light-color: #F7F8FA;
+  --highlight-ligth-mode: #0062FF;
+  --hightlight-dark-mode: #4089FF;
+}
+
+
 body {
     font-family: 'Work Sans', sans-serif;
-    color:#2A384D;
+    color:var(--dark-color);
+    background-color: white;
     height: 100%;
     font-size: 16px;
     max-width: 1536px;
     margin: auto;
 }
 
+body .dark-theme {
+    color: var(--light-color);
+    background-color: var(--dark-color);
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: white;
+    color: var(--dark-color);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--darker-color);
+    color: var(--light-color);
+  }
+}
+
 img {
-  /*border-radius: 4px;*/
   max-width: 100%;
   height: auto;
   object-fit: cover;
 }
 
-.material-icons {
-  font-family: 'Material Icons';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 1rem;  /* Preferred icon size: 24px; */
-  display: inline-block;
-  line-height: 1rem;
-  text-transform: none;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
-  margin-right: 0.3rem;
-
-  /* Support for all WebKit browsers. */
-  -webkit-font-smoothing: antialiased;
-  /* Support for Safari and Chrome. */
-  text-rendering: optimizeLegibility;
-
-  /* Support for Firefox. */
-  -moz-osx-font-smoothing: grayscale;
-
-  /* Support for IE. */
-  font-feature-settings: 'liga';
+.white-background {
+  background-color: white;
 }
 
-.row {
-  margin:0;
-  max-width: 100%;
-}
-
-/*.limited {
-  max-width: 1440px;
-  margin:auto;
-}*/
-
-
-/* Header Stylings */
-
-.intro {
-  height: 100%;
-  margin: 0;
-}
-
-.intro:hover {
-	color: #0062FF;
-}
-
-.description {
-  height: 100%;
-  color: #0062FF;
-  display: inline-block;
-  padding: 1.75rem;
-}
-
-@media screen and (min-width: 40em) {
-.description {
-  padding: 1.75rem 0 0 1.75rem;
-}
-}
-
-#name2, #designer2, #inventor2, #illustrator2, #dude2 {
-  display: none;
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transition: opacity 400ms, visibility 400ms;
-            transition: opacity 400ms, visibility 400ms;
-}
-
-#name:hover{
-  transition: 0.2s;
-  color: #0062FF;
-}
-
-#designer:hover{
-  transition: 0.2s;
-  color: #0062FF;
-}
-
-#inventor:hover{
-  transition: 0.2s; 
-  color: #0062FF;
-}
-
-#illustrator:hover{
-  transition: 0.2s; 
-  color: #0062FF;
-}
-
-#dude:hover{
-  transition: 0.2s; 
-  color: #0062FF;
-}
-
-#name:hover #name2 {
-  display: block;
-  visibility: visible;
-    opacity: 1;
-    animation: moveToRight 0.4s;
-}
-   
-#designer:hover #designer2 {
-  display: block;
-  visibility: visible;
-    opacity: 1;
-    animation: moveToRight 0.4s;
-}
-
-#inventor:hover #inventor2 {
-  display: block;
-  visibility: visible;
-    opacity: 1;
-    animation: moveToRight 0.4s;
-}
-
-#illustrator:hover #illustrator2 {
-  display: block;
-  visibility: visible;
-    opacity: 1;
-    animation: moveToRight 0.4s;
-}
-
-#dude:hover #dude2 {
-  display: block;
-  visibility: visible;
-    opacity: 1;
-    animation: moveToRight 0.4s;
-}
-
- @keyframes moveToRight {
-     0% {
-        opacity: 0;
-        transform: translateX(-0.75rem);
-      }
-     100% {
-        opacity: 1;
-        transform: translateX(0rem);
-      }
-    }
 
 /* Text Styles */
 
@@ -273,27 +168,22 @@ li {
 }
 
 .huge {
-  /*font-family: 'Work Sans', sans-serif;*/
   font-family: 'Space Grotesk', sans-serif;
   font-weight: 400;
   font-size: 4rem;
   line-height: 0.9;
   letter-spacing: -0.15rem;
-  /*margin: 0.3em 0;*/
 }
 
 .h1 {
-  /*font-family: 'Work Sans', sans-serif;*/
   font-family: 'Space Grotesk', sans-serif;
   font-weight: 400;
   font-size: 3rem;
   line-height: 1;
   letter-spacing: -0.1rem;
-  /*margin: 0.3em 0;*/
 }
 
 .h2 {
-  /*font-family: 'Work Sans', sans-serif;*/
   font-family: 'Space Grotesk', sans-serif;
   font-size: 2.5rem;
   font-weight: 400;
@@ -353,8 +243,7 @@ li {
     margin:0;}
   .h2 {
     font-size: 4rem;
-    line-height: 1;
-    /*letter-spacing: -0.15rem;*/}
+    line-height: 1;}
   .h3 {
     font-size: 3rem;
     line-height: 3.25rem;
@@ -368,44 +257,195 @@ li {
   .small-text {
     font-size: 1.25rem;
     line-height: 1.75rem;
-}
+  }
 }
 
+
 a {
-  color: #2A384D;
+  color: var(--dark-color);
 }
 
 a:hover {
-  /*text-decoration: underline;*/
-  color: #0062FF;
+  color: var(--highlight-ligth-mode);
  }
 
 .a-active {
-  color: #0062FF;
+  color: var(--highlight-ligth-mode);
  }
 
 .a-active:hover {
-  color: #2A384D;
-  /*text-decoration: underline;*/
+  color: var(--dark-color);
 }
 
-.a-inactive {
-  color: #2A384D;
- }
 
-.a-inactive:hover {
-  color: #0062FF;
-  /*text-decoration: underline;*/
+@media (prefers-color-scheme: dark) {
+  a {
+    color: var(--light-color);
+  }
+
+  a:hover {
+    color: #4089FF;
+  }
+
+  .a-active {
+    color: #4089FF;
+   }
+  
+  .a-active:hover {
+    color: var(--light-color);
+  }
 }
+
+.row {
+  margin:0;
+  max-width: 100%;
+}
+
+
+
+/* Header Stylings */
+
+.intro {
+  height: 100%;
+  margin: 0;
+}
+
+.intro:hover {
+	color: var(--highlight-ligth-mode);
+}
+
+@media (prefers-color-scheme: dark) {
+  .intro:hover {
+    color: var(--hightlight-dark-mode);
+  }
+}
+
+.description {
+  height: 100%;
+  color: var(--highlight-ligth-mode);
+  display: inline-block;
+  padding: 1.75rem;
+}
+
+@media screen and (min-width: 40em) {
+.description {
+  padding: 1.75rem 0 0 1.75rem;
+}
+}
+
+@media (prefers-color-scheme: dark) {
+  .description {
+    color: var(--hightlight-dark-mode);
+  }
+}
+
+#name2, #designer2, #inventor2, #illustrator2, #dude2 {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 400ms, visibility 400ms;
+            transition: opacity 400ms, visibility 400ms;
+}
+
+#name:hover{
+  transition: 0.2s;
+  color: var(--highlight-ligth-mode);
+}
+
+#designer:hover{
+  transition: 0.2s;
+  color: var(--highlight-ligth-mode);
+}
+
+#inventor:hover{
+  transition: 0.2s; 
+  color: var(--highlight-ligth-mode);
+}
+
+#illustrator:hover{
+  transition: 0.2s; 
+  color: var(--highlight-ligth-mode);
+}
+
+#dude:hover{
+  transition: 0.2s; 
+  color: var(--highlight-ligth-mode);
+}
+
+@media (prefers-color-scheme: dark) {
+  #name:hover{
+    color: var(--hightlight-dark-mode);
+  }
+  #designer:hover{
+    color: var(--hightlight-dark-mode);
+  }
+  #inventor:hover{
+    color: var(--hightlight-dark-mode);
+  }
+  #illustrator:hover{
+    color: var(--hightlight-dark-mode);
+  }
+  #dude:hover{
+    color: var(--hightlight-dark-mode);
+  }
+}
+
+
+#name:hover #name2 {
+  display: block;
+  visibility: visible;
+    opacity: 1;
+    animation: moveToRight 0.4s;
+}
+   
+#designer:hover #designer2 {
+  display: block;
+  visibility: visible;
+    opacity: 1;
+    animation: moveToRight 0.4s;
+}
+
+#inventor:hover #inventor2 {
+  display: block;
+  visibility: visible;
+    opacity: 1;
+    animation: moveToRight 0.4s;
+}
+
+#illustrator:hover #illustrator2 {
+  display: block;
+  visibility: visible;
+    opacity: 1;
+    animation: moveToRight 0.4s;
+}
+
+#dude:hover #dude2 {
+  display: block;
+  visibility: visible;
+    opacity: 1;
+    animation: moveToRight 0.4s;
+}
+
+ @keyframes moveToRight {
+     0% {
+        opacity: 0;
+        transform: translateX(-0.75rem);
+      }
+     100% {
+        opacity: 1;
+        transform: translateX(0rem);
+      }
+    }
+
 
 .bullets {
   margin-left:1.5rem;
 }
 
-.divider { 
+.divider {
  height: .2rem;
  width: 100%;
- background-color:#2A384D;
+ background-color:var(--dark-color);
 }
 
 @media screen and (min-width: 40em) {
@@ -413,18 +453,29 @@ a:hover {
    height: .4rem;}
 }
 
+@media (prefers-color-scheme: dark) {
+  .divider {
+    background-color: var(--light-color);
+  }
+}
 
 /* Style the navbar */
 
 
-#logo {
+#logo{
   width: 4rem;
   height: 4rem;
   margin: 1rem;
   z-index: 15;
-  fill: red;
   position:fixed;
   top:0;
+}
+
+
+@media (prefers-color-scheme: dark) {
+  #logo {
+    fill: var(--hightlight-dark-mode);
+  }
 }
 
 @-ms-keyframes wiggle{0%{-ms-transform:rotate(3deg);}50%{-ms-transform:rotate(-3deg);}100%{-ms-transform:rotate(3deg);}}
@@ -435,6 +486,7 @@ a:hover {
 #logo:hover {
 -ms-animation:wiggle .3s 2;-moz-animation:wiggle .3s 2;-webkit-animation:wiggle .3s 2;animation:wiggle .3s 2;}
     
+
 
 /*#logo-sticky {
   position:fixed;
@@ -483,6 +535,9 @@ a:hover {
       }
     }
 */
+
+
+
 /* Lottie File */
 
 #logoanimation {
@@ -494,14 +549,13 @@ a:hover {
 }
 
 @media screen and (min-width: 40em) {
-#logoanimation {
-  width: 360px;
-  height: 180px;
-  left: -64px;
-  margin-bottom: 8px;
+  #logoanimation {
+    width: 360px;
+    height: 180px;
+    left: -64px;
+    margin-bottom: 8px;
+  }
 }
-}
-
 
 
 #menumobile {
@@ -529,18 +583,26 @@ a:hover {
   padding: 1rem 2rem;
   margin: 0.75rem 0;
   cursor:pointer;
-  /*border-bottom: 4px solid white;*/
 }
 
 .menuitem span {
-  color:#2A384D;
+  color: var(--dark-color);
 }
 
 .menuitem:hover {
-  color: #0062FF;
-  /*border-bottom: 4px solid #0062FF;
-  background-color: #f5f6f7;*/
+  color: var(--highlight-ligth-mode);
 }
+
+@media (prefers-color-scheme: dark) {
+  .menuitem span {
+    color: var(--light-color);
+  }
+
+  .menuitem:hover {
+    color: var(--hightlight-dark-mode);
+  }
+}
+
 
 
 #menu2 {
@@ -562,11 +624,16 @@ a:hover {
   position: absolute;
   overflow: hidden;
   top: 5rem;
-  background-color: #111D29;
-  /*border-radius: 4px;*/
+  background-color: var(--darker-color);
   min-width: 216px;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.16), 0px 0px 2px rgba(0, 0, 0, 0.16);
   z-index: 10;
+}
+
+@media (prefers-color-scheme: dark) {
+  .dropdown-content{
+    background-color: var(--dark-color);
+  }
 }
 
  @keyframes moveDown {
@@ -614,7 +681,13 @@ a:hover {
 */
 
 .currentpage {
-  border-left: 6px solid #0062FF;
+  border-left: 6px solid #0062ff;
+}
+
+@media (prefers-color-scheme: dark) {
+  .currentpage {
+    border-left: 6px solid #4089FF;
+  }
 }
 
 .currentpage a {
@@ -639,8 +712,8 @@ a:hover {
 }
 
 .tooltip {
-  background-color: #111D29;
-  color: #fff;
+  background-color: var(--darker-color);
+  color: var(--light-color);
   font-size: 1.25rem;
   line-height: 1.5rem;
   padding: 1.5rem;
@@ -648,11 +721,16 @@ a:hover {
   z-index: 10;
   top: calc(100% + 0.5rem);
   max-width: 25rem !important;
-  /*border-radius: 4px;*/
   box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.16), 0px 0px 2px rgba(0, 0, 0, 0.16);}
 
   .tooltip::before {
-    border-color: transparent transparent #111D29;}
+    border-color: transparent transparent var(--darker-color);}
+
+@media (prefers-color-scheme: dark) {
+  .tooltip{
+    background-color: var(--dark-color);
+  }
+}
 
 
 @media screen and (min-width: 40em) {
@@ -784,9 +862,9 @@ a:hover {
 }
 
 @media screen and (min-width: 40em) {
-.image-hover-wrapper a img {
-  height: auto;
-}
+  .image-hover-wrapper a img {
+    height: auto;
+  }
 }
 
 
@@ -878,9 +956,9 @@ a:hover {
     background-color: rgba(42, 56, 77, 0.3);
     border-radius: 100%; }
     .orbit-bullets button:hover {
-      background-color: #2A384D; }
+      background-color: var(--dark-color); }
     .orbit-bullets button.is-active {
-      background-color: #2A384D; }
+      background-color: var(--dark-color); }
 
 
 /*Video*/
@@ -916,12 +994,12 @@ a:hover {
 
 
 .pullout {
-  background-color: #0062FF;
+  background-color: var(--highlight-ligth-mode);
   margin-bottom: 8rem;
 }
 
 .pullout p {
-  color: #fff;
+  color: var(--light-color);
   text-align: center;
 }
 
@@ -930,9 +1008,17 @@ a:hover {
 }
 
 .pullquote {
-  border-left: 4px solid #0062FF;
+  border-left: 4px solid var(--highlight-ligth-mode);
   margin-bottom: 1rem;
 }
+
+@media (prefers-color-scheme: dark) {
+  .pullquote {
+    border-left: 4px solid var(--hightlight-dark-mode);
+  }
+}
+
+
 
 .quote {
   padding: .75rem 0 .25rem 1.5rem;
@@ -964,6 +1050,7 @@ table {
   font-size: .75rem;
   line-height: 1rem;
   overflow: scroll;
+  background-color: transparent !important;
 }
 
 @media screen and (min-width: 40em) {
@@ -979,16 +1066,34 @@ td {
 
 th {
   font-weight: 600 !important;
-  font-size: 0.8rem;
-  text-transform: uppercase;
+  font-size: .75rem;
   margin-bottom: 1.5rem;
-  color:#2A384D;
+  color:var(--dark-color);
 }
 
 @media screen and (min-width: 40em) {
   th {
-    font-size: 1rem;}
+    font-size: 1.25rem;}
 }
+
+table thead {
+  border-bottom: 2px solid var(--dark-color);
+  background-color: transparent; }
+table thead,
+table tfoot {
+  background: rgba(192, 194, 197, 0.15);}
+table tbody tr:nth-child(even) {
+  background-color: rgba(192, 194, 197, 0.15); }
+
+
+@media (prefers-color-scheme: dark) {
+  table th{
+    color: var(--light-color);
+  }
+  table thead {
+    border-bottom: 2px solid var(--light-color);
+}
+
 
 figcaption {
   text-align: center;
@@ -1047,7 +1152,7 @@ figcaption {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background: rgba(255, 255, 255, 0.9);
+  background: var(--dark-color);
   max-height: 100vh;
 }
 
@@ -1064,8 +1169,8 @@ figcaption {
 .caption-container {
   width: 100%;
   text-align: center;
-  color: #2A384D;
-  background-color: white;
+  color: var(--light-color);
+  background-color: var(--dark-color);
   height: 3rem;
 }
 
@@ -1076,7 +1181,7 @@ figcaption {
 
 /* The Close Button */
 .close {
-  color: #2A384D;
+  color: var(--light-color);
   position: absolute;
   top: 3rem;
   right: 2rem;
@@ -1087,7 +1192,7 @@ figcaption {
 
 .close:hover,
 .close:focus {
-  color: #0062FF;
+  color: var(--highlight-dark-mode);
   text-decoration: none;
   cursor: pointer;
   z-index: 7;
@@ -1118,7 +1223,7 @@ figcaption {
   width: auto;
   padding: 1.5rem;
   margin-top: -50px;
-  color: #2A384D;
+  color: var(--light-color);
   font-weight: bold;
   font-size: 2rem;
   transition: 0.6s ease;
@@ -1138,13 +1243,13 @@ figcaption {
 .prev:hover,
 .next:hover {
   background-color: rgba(42, 56, 77, 0.05);
-  color: #0062FF;
+  color: var(--hightlight-dark-mode);
 }
 
 .demonav {
   height: 5rem;
   width: 100%;
-  background: white;
+  background: var(--dark-color);
   position: absolute;
   bottom: 0px;
   margin: auto;
