@@ -576,7 +576,7 @@ a:hover {
   color: var(--highlight-ligth-mode);
 }
 
-@media (prefers-color-scheme: dark) {
+/*@media (prefers-color-scheme: dark) {
   .menuitem span {
     color: var(--light-color);
   }
@@ -584,7 +584,7 @@ a:hover {
   .menuitem:hover {
     color: var(--hightlight-dark-mode);
   }
-}
+}*/
 
 
 
