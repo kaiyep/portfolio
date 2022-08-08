@@ -103,7 +103,7 @@ html {
   --darker-color:  #111D29;
   --light-color: #F7F8FA;
   --highlight-ligth-mode: #0062FF;
-  --hightlight-dark-mode: #4089FF;
+  --hightlight-dark-mode: #5999FF;
 }
 
 
@@ -117,8 +117,8 @@ body {
     margin: auto;
 }
 
-/*
-body .dark-theme {
+
+body.dark-theme {
     color: var(--light-color);
     background-color: var(--dark-color);
 }
@@ -135,7 +135,7 @@ body .dark-theme {
     background-color: var(--darker-color);
     color: var(--light-color);
   }
-}*/
+}
 
 img {
   max-width: 100%;
@@ -217,6 +217,7 @@ li {
   margin-bottom: 1.5rem;
 }
 
+
 .small-text {
   font-size: 0.75rem;
   line-height: 1rem;
@@ -279,23 +280,23 @@ a:hover {
 }
 
 
-/*@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
   a {
     color: var(--light-color);
   }
 
   a:hover {
-    color: #4089FF;
+    color: #5999FF;
   }
 
   .a-active {
-    color: #4089FF;
+    color: #5999FF;
    }
   
   .a-active:hover {
     color: var(--light-color);
   }
-}*/
+} 
 
 .row {
   margin:0;
@@ -316,11 +317,11 @@ a:hover {
   cursor: default;
 }
 
-/*@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
   .intro:hover {
     color: var(--hightlight-dark-mode);
   }
-}*/
+}
 
 .description {
   height: 100%;
@@ -336,11 +337,11 @@ a:hover {
 }
 }
 
-/*@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
   .description {
     color: var(--hightlight-dark-mode);
   }
-}*/
+}
 
 #name2, #designer2, #inventor2, #illustrator2, #dude2 {
   display: none;
@@ -359,7 +360,7 @@ a:hover {
   color: var(--highlight-ligth-mode);
 }
 
-/*@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
   #name:hover,
   #designer:hover,
   #inventor:hover,
@@ -367,7 +368,7 @@ a:hover {
   #dude:hover, {
     color: var(--hightlight-dark-mode);
   }
-}*/
+}
 
 
 #name:hover #name2 {
@@ -432,11 +433,11 @@ a:hover {
    height: .4rem;}
 }
 
-/*@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
   .divider {
     background-color: var(--light-color);
   }
-}*/
+}
 
 /* Style the navbar */
 
@@ -451,11 +452,11 @@ a:hover {
 }
 
 
-/*@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
   #logo {
-    fill: var(--hightlight-dark-mode);
+    filter: brightness(180%) saturate(90%) hue-rotate(30deg);
   }
-}*/
+
 
 @-ms-keyframes wiggle{0%{-ms-transform:rotate(3deg);}50%{-ms-transform:rotate(-3deg);}100%{-ms-transform:rotate(3deg);}}
 @-moz-keyframes wiggle{0%{-moz-transform:rotate(3deg);}50%{-moz-transform:rotate(-3deg);}100%{-moz-transform:rotate(3deg);}}
@@ -536,16 +537,21 @@ a:hover {
   }
 }
 
+@media (prefers-color-scheme: dark) {
+  #logoanimation {
+    filter: brightness(180%) saturate(90%) hue-rotate(30deg);
+  }
+
 
 #menumobile {
  margin-top: 1rem;
 }
 
-/*@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
   #menumobile img {
     filter: invert(100%) brightness(3.0) ;
   }
-}*/
+}
 
 .topmenu {
   text-align: right;
@@ -578,7 +584,7 @@ a:hover {
   color: var(--highlight-ligth-mode);
 }
 
-/*@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
   .menuitem span {
     color: var(--light-color);
   }
@@ -586,7 +592,7 @@ a:hover {
   .menuitem:hover {
     color: var(--hightlight-dark-mode);
   }
-}*/
+}
 
 
 
@@ -615,11 +621,11 @@ a:hover {
   z-index: 10;
 }
 
-/*@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
   .dropdown-content{
     background-color: var(--dark-color);
   }
-}*/
+}
 
  @keyframes moveDown {
      0% {
@@ -669,11 +675,11 @@ a:hover {
   border-left: 6px solid #0062ff;
 }
 
-/*@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
   .currentpage {
-    border-left: 6px solid #4089FF;
+    border-left: 6px solid #5999FF;
   }
-}*/
+}
 
 .currentpage a {
 	opacity:1;
@@ -711,11 +717,11 @@ a:hover {
   .tooltip::before {
     border-color: transparent transparent var(--darker-color);}
 
-/*@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
   .tooltip{
     background-color: var(--dark-color);
   }
-}*/
+}
 
 
 @media screen and (min-width: 40em) {
@@ -994,11 +1000,11 @@ a:hover {
   margin-bottom: 1rem;
 }
 
-/*@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
   .pullquote {
     border-left: 4px solid var(--hightlight-dark-mode);
   }
-}*/
+}
 
 
 
@@ -1067,13 +1073,13 @@ table tbody tr:nth-child(even) {
   background-color: rgba(192, 194, 197, 0.15); }
 
 
-/*@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
   table th{
     color: var(--light-color);
   }
   table thead {
     border-bottom: 2px solid var(--light-color);
-}*/
+}
 
 
 figcaption {
