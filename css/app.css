@@ -1080,8 +1080,8 @@ table tbody tr:nth-child(even) {
   }
   table thead {
     border-bottom: 2px solid var(--light-color);
+  }
 }
-
 
 figcaption {
   text-align: center !important;
