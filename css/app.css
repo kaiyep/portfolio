@@ -332,9 +332,9 @@ a:hover {
 }
 
 @media screen and (min-width: 40em) {
-.description {
-  padding: 1.75rem 0 0 1.75rem;
-}
+  .description {
+    padding: 1.75rem 0 0 1.75rem;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -454,7 +454,7 @@ a:hover {
 
 @media (prefers-color-scheme: dark) {
   #logo {
-    filter: brightness(180%) saturate(90%) hue-rotate(30deg);
+    filter: brightness(165%) saturate(90%) hue-rotate(15deg);
   }
 }  
 
@@ -540,7 +540,7 @@ a:hover {
 
 @media (prefers-color-scheme: dark) {
   #logoanimation {
-    filter: brightness(180%) saturate(90%) hue-rotate(30deg);
+     filter: brightness(165%) saturate(90%) hue-rotate(15deg);
   }
 }
 
@@ -810,6 +810,12 @@ a:hover {
 
 .image {
   margin: 1rem 0 1rem 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  .image{
+    filter:  opacity(90%);
+  }
 }
 
 .hero-image{
