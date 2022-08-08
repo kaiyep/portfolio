@@ -313,6 +313,7 @@ a:hover {
 
 .intro:hover {
 	color: var(--highlight-ligth-mode);
+  cursor: default;
 }
 
 /*@media (prefers-color-scheme: dark) {
@@ -326,6 +327,7 @@ a:hover {
   color: var(--highlight-ligth-mode);
   display: inline-block;
   padding: 1.75rem;
+  cursor: default;
 }
 
 @media screen and (min-width: 40em) {
