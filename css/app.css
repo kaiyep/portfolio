@@ -456,6 +456,7 @@ a:hover {
   #logo {
     filter: brightness(180%) saturate(90%) hue-rotate(30deg);
   }
+}  
 
 
 @-ms-keyframes wiggle{0%{-ms-transform:rotate(3deg);}50%{-ms-transform:rotate(-3deg);}100%{-ms-transform:rotate(3deg);}}
@@ -541,7 +542,7 @@ a:hover {
   #logoanimation {
     filter: brightness(180%) saturate(90%) hue-rotate(30deg);
   }
-
+}
 
 #menumobile {
  margin-top: 1rem;
